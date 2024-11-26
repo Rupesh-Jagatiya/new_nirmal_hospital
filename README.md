@@ -1,1 +1,1 @@
-# new_nirmal_hospital
+# Nirmal-Hospitals-Project
