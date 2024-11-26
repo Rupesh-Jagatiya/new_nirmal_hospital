@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Header with White Background</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         /* Mobile menu sliding effect */
         #mobile-menu {
@@ -16,10 +17,37 @@
         #mobile-menu.active {
             transform: translateY(0);
         }
+
+        /* .custom-button a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            border: 1px solid #000000;
+            padding: 8px 10px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .custom-button a::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            right: -1px;
+            height: 0;
+            width: 0;
+            width: 50px;
+            height: 120%;
+            border-right: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+            box-sizing: border-box;
+        } */
+      
     </style>
 </head>
 
-<body class="bg-gradient-to-r from-[#080321] via-[#090627] to-[#101542]">
+<body class="">
 
     <!-- Header Section -->
     <header class="w-full h-[70px] bg-white shadow-md relative flex items-center z-50">
@@ -53,7 +81,7 @@
                 <a href="#blogs" class="hover:text-blue-600">Contact Us</a>
             </nav>
 
-            <a href="#" class="hidden md:block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">Book Appointment</a>
+            <a href="#" class="hidden md:block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 ">Book Appointment</a>
         </div>
     </header>
 
@@ -65,41 +93,166 @@
             <a href="#solutions" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Solutions</a>
             <a href="#buy-sell" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Buy-sell</a>
             <a href="#blogs" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Blogs</a>
-            <a href="#" class=" md:block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">Book Appointment</a>
+            <div class="custom-button">
+                <a href="#">Contact Us <span>&rarr;</span></a>
+            </div>
         </nav>
     </div>
 
+    <!-- Banner Section -->
+    <section class="relative z-10">
+        <!-- Full-width Responsive Background Image -->
+        <div class="w-full h-[calc(100vh-70px)] bg-cover bg-center flex items-center justify-center"
+            style="background-image: url('images/banner_image.jpeg');">
+            
+             <!-- Overlay for better text readability -->
+             <!-- <div class="absolute inset-0" style="background-color: rgba(181, 207, 226, 1);"></div> -->
 
-<!-- Banner Section -->
-<section class="relative z-10">
-    <!-- Full-width Responsive Background Image -->
-    <div 
-        class="w-full h-[calc(100vh-70px)] bg-cover bg-center flex items-center justify-center"
-        style="background-image: url('images/banner_image.jpeg');">
-        
-         <!-- Overlay for better text readability -->
-         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-       
+    
+            <!-- Banner Content -->
+            <div class="relative z-10 w-full px-6 py-16 text-white max-w-[1440px]">
+                <!-- First Horizontal Section Inside Banner -->
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 md:space-x-6">
+                    <div class="w-full md:w-1/2 text-left">
+                        <p class="text-sm font-semibold mb-2" style="color: rgb(167, 68, 79);">Better Care Health, Life</p>
+                        <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4"style="color: rgb(28, 57, 106, 1);">Hospital That You <br> Can Trust</h1>
+                        <p class="text-sm font-semibold text-black" style="margin-bottom: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Ducimus, est.  Eos veritatis.</p>
+                        <a href="#" class=" bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 ">Book Appointment</a>
+                        <!-- <div class="custom-button">
+                            <a href="#" class="px-6 py-3  bg-purple-500 hover:bg-purple-600 font-semibold rounded-md">
+                                Learn More <span>&rarr;</span>
+                            </a>
+                        </div> -->
+                    </div>
+    
+                    <!-- <div class="w-full md:w-1/2 flex justify-center">
+                        <img src="./Images/20945965-ai 1.png" alt="Hero Image" class="max-w-[280px] md:max-w-full h-auto rounded-lg">
+                    </div> -->
+                </div>
+                <div class="absolute top-[125px] left-[-10px] space-y-4">
+                    <a href="#" class="block w-5 h-5 bg-white text-[rgba(28,57,106,1)] h-[20px] w-[20px] text-[10px] rounded-full flex items-center justify-center hover:bg-blue-700">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="block w-5 h-5 bg-white text-[rgba(28,57,106,1)] text-[10px] rounded-full flex items-center justify-center hover:bg-pink-700 hover:text-white">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a href="#" class="block w-5 h-5 bg-white text-[rgba(28,57,106,1)] text-[10px] rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                      <a href="#" class="block w-5 h-5 bg-white text-[rgba(28,57,106,1)] text-[10px] rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                      
+                  </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Banner Content -->
-        <div class="relative z-10 text-center text-white max-w-[800px] px-6">
-            <h1 class="text-4xl md:text-6xl font-bold mb-5 leading-snug">
-                Import Export <span class="text-purple-300">Agent for</span> <br> International Trade
-            </h1>
-            <p class="text-sm md:text-lg mb-7">
-                Export Agent is the professional that your company needs if you are looking for buyers or suppliers
-                in textile, food and beverages, agriculture products, aquaculture, plastics fields.
-            </p>
-            <div class="custom-button">
-                <a href="#" class="px-6 py-3 text-white bg-purple-500 hover:bg-purple-600 font-semibold rounded-md">
-                    Learn More <span>&rarr;</span>
+    <section class="about container mx-auto px-6 py-12 max-w-7xl mt-8">
+        <div class="flex flex-col-reverse md:flex-row items-start gap-12 align-center">
+            <!-- Left Column: Stacked Images -->
+            <div class="relative w-full md:w-1/2 mt-8 md:mt-0">
+                <!-- Dots Image -->
+                <div class="absolute top-[-50px] left-[-80px] z-10 w-[300px] h-[200px] md:w-[269px] md:h-[269px] z-[9]">
+                    <img src="images/dots.png" alt="" class="rounded-lg object-cover w-full h-full" />
+                </div>
+                <!-- About1 Image -->
+                <div class="absolute top-0 left-0 z-10 w-[300px] h-[200px] md:w-[400px] md:h-[250px] shadow-lg">
+                    <img src="images/about1.jpeg" alt="Doctor 1" class="rounded-lg object-cover w-full h-full" />
+                </div>
+                <!-- About2 Image (Mobile View Adjustment) -->
+                <div class="absolute top-[210px] left-[100px] z-0 w-[300px] h-[200px] md:w-[350px] md:h-[230px] shadow-lg md:top-[290px] md:left-[190px]">
+                    <img src="images/about2.jpeg" alt="Doctor 2" class="rounded-lg object-cover w-full h-full" />
+                </div>
+                <!-- Group Image -->
+                <div class="absolute top-[290px] left-[0px] z-0 w-[100px] h-[100px] md:w-[172px] md:h-[172px]">
+                    <img src="images/Group.png" alt="" class="rounded-lg object-cover w-full h-full" />
+                </div>
+            </div>
+    
+            <!-- Right Column: Text Content -->
+            <div class="w-full md:w-1/2 space-y-6 mt-[60px]">
+                <h2 class="text-3xl font-bold text-[rgba(28,57,106,1)]">
+                    About Nirmal <span class="" style="color: rgba(167, 62, 79, 1);"> Hospital</span> 
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                    NIRMAL HOSPITALS has state-of-the-art infrastructure and is equipped to offer 
+                    healthcare services in specialties and super specialties backed by specialized facilities, 
+                    value-added services, and round-the-clock services. The hospital is a one-place treatment 
+                    center with all diagnostic facilities, excellence, and a patient-friendly ambiance.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    With medical expertise supported by the latest equipment, we offer healthcare treatment of 
+                    quality standards with utmost transparency, compassion, and care. Care with compassion and 
+                    service excellence are the guiding principles of the team.
+                </p>
+                <!-- Call-to-Action Button -->
+                <a
+                    href="#"
+                    class="relative inline-flex items-center px-6 py-3 w-[167px] h-[50px] text-white rounded-lg hover:bg-red-700 transition" style="background-color: rgba(167, 62, 79, 1);">
+                    Read More
+                    <img src="images/doubleaerrow.png" alt="" class="absolute right-[18px] top-[20px] w-[12px]">
                 </a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <section class="special w-full bg-[rgba(235,240,246,1)] mt-12 md:mt-16">
+        <div class="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-[rgba(28,57,106,1)]">
+                        Area of <span class="text-[rgba(167,62,79,1)]">Specialization</span>
+                    </h2>
+                    <p class="text-gray-600 mt-2">
+                        Nirmal Hospital is a Multi-Specialty Health Hub for Oncology, Onco Surgery, Pediatric, Neurology, Neurosurgery, and Laparoscopy Surgery.
+                    </p>
+                </div>
+                <a href="#" class="inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-red-700 transition bg-[rgba(167,62,79,1)]">
+                    Read More
+                    <img src="images/doubleaerrow.png" alt="Arrow" class="ml-2 w-4">
+                </a>
+            </div>
+    
+            <!-- Specialization Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <img src="images/pathlogy.png" alt="Pathology" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">Pathology</h3>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <img src="images/ortho.png" alt="Orthopedics" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">Orthopedics</h3>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <img src="images/nutrition.png" alt="Nutrition" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">Nutrition</h3>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <img src="images/medicine.png" alt="General Medicine" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">General Medicine</h3>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <img src="images/science.png" alt="Neuro Science Unit" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">Neuro Science Unit</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+      
+    
+    
+    
+    
+    
 
+    
+    
+    
 
     <!-- JavaScript for Menu Toggle -->
     <script>
@@ -128,97 +281,3 @@
 </body>
 
 </html>
- 
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nirmal Hospitals</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50">
-
-  
-  <header class="bg-white shadow-md">
-     <div class="container mx-auto px-4 py-4 flex justify-between items-center max-w-[1440px]">
-     
-      <div class="text-xl font-bold text-blue-800 flex items-center">
-        <img src="images/hospitallogo.png" alt="Nirmal Hospitals Logo" class="h-10"></div>
-    
-      <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
-        <a href="#" class="hover:text-blue-800">Home</a>
-        <a href="#" class="hover:text-blue-800">About Us</a>
-        <a href="#" class="hover:text-blue-800">Services</a>
-        <a href="#" class="hover:text-blue-800">Specialty</a>
-        <a href="#" class="hover:text-blue-800">Blog</a>
-        <a href="#" class="hover:text-blue-800">Team</a>
-        <a href="#" class="hover:text-blue-800">Contact Us</a>
-      </nav>
-    
-      <a href="#" class="hidden md:block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">Book Appointment</a>
-    
-      <button id="menuToggle" class="md:hidden text-gray-700">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-      </button>
-    </div>
-    
-    <div id="mobileMenu" class="hidden md:hidden bg-gray-100 py-4">
-      <a href="#" class="block px-4 py-2 hover:bg-gray-200">Home</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-200">About Us</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-200">Services</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-200">Specialty</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-200">Blog</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-200">Team</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-200">Contact Us</a>
-    </div>
-  </header>
-
- 
-  <section class="bg-blue-50">
-    <div class="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center">
-  
-      <div class="md:w-1/2 text-center md:text-left">
-        <p class="text-red-600 text-sm  font-semibold mb-2">Better Care Helth, Life</p>
-        <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">Hospital That You <br> Can Trust</h1>
-        <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor interdum arcu.</p>
-        <a href="#" class="bg-red-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700">
-          Book Appointment
-        </a>
-      </div>
-  
-      <div class="md:w-1/2 mt-6 md:mt-0 flex justify-center">
-        <img src="doctor-image.png" alt="Doctors" class="w-full max-w-sm">
-      </div>
-    </div>
-   
-    <div class="fixed top-1/4 left-4 space-y-4">
-      <a href="#" class="block w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700">
-        F
-      </a>
-      <a href="#" class="block w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center hover:bg-pink-700">
-        I
-      </a>
-      <a href="#" class="block w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600">
-        L
-      </a>
-    </div>
-  </section>
-
-  
-  <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
-
-</body>
-</html> -->
-

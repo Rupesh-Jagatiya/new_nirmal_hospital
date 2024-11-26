@@ -51,7 +51,7 @@
 
     <!-- Header Section -->
     <header class="w-full h-[70px] bg-white shadow-md relative flex items-center z-50">
-        <div class="container mx-auto max-w-[1440px] flex justify-between items-center px-6">
+        <div class="container mx-auto max-w-[1200px] flex justify-between items-center px-6">
             <!-- Shape (hidden on mobile) -->
             <div id="shape-image" class="absolute top-[-35px] left-0 z-10 hidden md:block">
                 
@@ -110,7 +110,7 @@
 
     
             <!-- Banner Content -->
-            <div class="relative z-10 w-full px-6 py-16 text-white max-w-[1440px]">
+            <div class="relative z-10 w-full px-6 py-16 text-white max-w-[1200px]">
                 <!-- First Horizontal Section Inside Banner -->
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 md:space-x-6">
                     <div class="w-full md:w-1/2 text-left">
@@ -148,51 +148,105 @@
         </div>
     </section>
 
-    <section class="container mx-auto px-6 py-12 max-w-7xl">
+    <section class="about container mx-auto px-6 py-12 max-w-7xl mt-8">
         <div class="flex flex-col md:flex-row items-start gap-12">
             <!-- Left Column: Stacked Images -->
             <div class="relative w-full md:w-1/2">
-                <!-- Image 1 (Top Image) -->
-                <div class="absolute top-0 left-0 z-10 w-[300px] h-[200px] md:w-[400px] md:h-[250px] shadow-lg">
-                    <img src="images/about1.jpeg" alt="Doctor 1" class="rounded-lg object-cover w-full h-full" />
+                <!-- Dots Image -->
+                <div class="absolute top-0 left-[-20px] md:top-[-50px] md:left-[-80px]">
+                    <img src="images/dots.png" alt="Decorative dots" class="rounded-lg object-cover w-[150px] h-[150px] md:w-[300px] md:h-[200px]" />
                 </div>
-                <!-- Image 2 (Bottom Image) -->
-                <div class="absolute top-[290px] left-[190px] z-0 w-[300px] h-[200px] md:w-[400px] md:h-[250px] shadow-lg">
-                    <img src="images/about1.jpeg" alt="Doctor 2" class="rounded-lg object-cover w-full h-full" />
+                <!-- About1 Image -->
+                <div class="relative z-10">
+                    <img src="images/about1.jpeg" alt="Doctor 1" class="rounded-lg object-cover w-full max-w-[400px] ml-0 shadow-lg mx-auto m-l" />
                 </div>
-                <div class="absolute top-[290px] left-[190px] z-0 w-[300px] h-[200px] md:w-[400px] md:h-[250px] shadow-lg">
-                    <img src="images/about2.jpeg" alt="Doctor 2" class="rounded-lg object-cover w-full h-full" />
+                <!-- About2 Image -->
+                <div class="relative mt-6 z-0">
+                    <img src="images/about2.jpeg" alt="Doctor 2" class="rounded-lg object-cover w-full mr-0 max-w-[350px] shadow-lg mx-auto" />
+                </div>
+                 <div class="absolute top-[290px] left-[0px] z-0 w-[100px] h-[100px] md:w-[172px] md:h-[172px]">
+                    <img src="images/Group.png" alt="" class="rounded-lg object-cover w-full h-full" />
                 </div>
             </div>
     
             <!-- Right Column: Text Content -->
             <div class="w-full md:w-1/2 space-y-6">
-                <h2 class="text-3xl font-bold text-gray-800">
-                    About <span class="text-red-600">Nirmal Hospital</span>
+                <h2 class="text-3xl font-bold text-[rgba(28,57,106,1)]">
+                    About Nirmal <span class="text-[rgba(167,62,79,1)]">Hospital</span>
                 </h2>
                 <p class="text-gray-600 leading-relaxed">
                     NIRMAL HOSPITALS has state-of-the-art infrastructure and is equipped to offer 
                     healthcare services in specialties and super specialties backed by specialized facilities, 
-                    value-added services, and round-the-clock services. The hospital is a one-place treatment 
-                    center with all diagnostic facilities, excellence, and a patient-friendly ambiance.
+                    value-added services, and round-the-clock services.
                 </p>
                 <p class="text-gray-600 leading-relaxed">
                     With medical expertise supported by the latest equipment, we offer healthcare treatment of 
-                    quality standards with utmost transparency, compassion, and care. Care with compassion and 
-                    service excellence are the guiding principles of the team.
+                    quality standards with utmost transparency, compassion, and care.
                 </p>
-                <!-- Call-to-Action Button -->
-                <a
-                    href="#"
-                    class="inline-flex items-center px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
+                <a href="#"
+                    class="inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-red-700 transition bg-[rgba(167,62,79,1)]">
                     Read More
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
+                    <img src="images/doubleaerrow.png" alt="Arrow" class="ml-2 w-4">
                 </a>
             </div>
         </div>
     </section>
+    
+    <section class="special w-full bg-[rgba(235,240,246,1)] mt-12 md:mt-16">
+        <div class="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-[rgba(28,57,106,1)]">
+                        Area of <span class="text-[rgba(167,62,79,1)]">Specialization</span>
+                    </h2>
+                    <p class="text-gray-600 mt-2">
+                        Nirmal Hospital is a Multi-Specialty Health Hub for Oncology, Onco Surgery, Pediatric, Neurology, Neurosurgery, and Laparoscopy Surgery.
+                    </p>
+                </div>
+                <a href="#" class="inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-red-700 transition bg-[rgba(167,62,79,1)]">
+                    Read More
+                    <img src="images/doubleaerrow.png" alt="Arrow" class="ml-2 w-4">
+                </a>
+            </div>
+    
+            <!-- Specialization Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <img src="images/pathlogy.png" alt="Pathology" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">Pathology</h3>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <img src="images/ortho.png" alt="Orthopedics" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">Orthopedics</h3>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <img src="images/nutrition.png" alt="Nutrition" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">Nutrition</h3>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <img src="images/medicine.png" alt="General Medicine" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">General Medicine</h3>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <img src="images/science.png" alt="Neuro Science Unit" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">Neuro Science Unit</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+
+    
     
     
 
