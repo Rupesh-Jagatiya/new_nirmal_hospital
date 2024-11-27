@@ -51,7 +51,7 @@
 
     <!-- Header Section -->
     <header class="w-full h-[70px] bg-white shadow-md relative flex items-center z-50">
-        <div class="container mx-auto max-w-[1440px] flex justify-between items-center px-6">
+        <div class="container mx-auto max-w-[1200px] flex justify-between items-center px-6">
             <!-- Shape (hidden on mobile) -->
             <div id="shape-image" class="absolute top-[-35px] left-0 z-10 hidden md:block">
                 
@@ -110,7 +110,7 @@
 
     
             <!-- Banner Content -->
-            <div class="relative z-10 w-full px-6 py-16 text-white max-w-[1440px]">
+            <div class="relative z-10 w-full px-6 py-16 text-white max-w-[1200px]">
                 <!-- First Horizontal Section Inside Banner -->
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 md:space-x-6">
                     <div class="w-full md:w-1/2 text-left">
@@ -149,54 +149,49 @@
     </section>
 
     <section class="about container mx-auto px-6 py-12 max-w-7xl mt-8">
-        <div class="flex flex-col-reverse md:flex-row items-start gap-12 align-center">
+        <div class="flex flex-col md:flex-row items-start gap-12">
             <!-- Left Column: Stacked Images -->
-            <div class="relative w-full md:w-1/2 mt-8 md:mt-0">
+            <div class="relative w-full md:w-1/2">
                 <!-- Dots Image -->
-                <div class="absolute top-[-50px] left-[-80px] z-10 w-[300px] h-[200px] md:w-[269px] md:h-[269px] z-[9]">
-                    <img src="images/dots.png" alt="" class="rounded-lg object-cover w-full h-full" />
+                <div class="absolute top-0 left-[-20px] md:top-[-50px] md:left-[-80px]">
+                    <img src="images/dots.png" alt="Decorative dots" class="rounded-lg object-cover w-[150px] h-[150px] md:w-[300px] md:h-[200px]" />
                 </div>
                 <!-- About1 Image -->
-                <div class="absolute top-0 left-0 z-10 w-[300px] h-[200px] md:w-[400px] md:h-[250px] shadow-lg">
-                    <img src="images/about1.jpeg" alt="Doctor 1" class="rounded-lg object-cover w-full h-full" />
+                <div class="relative z-10">
+                    <img src="images/about1.jpeg" alt="Doctor 1" class="rounded-lg object-cover w-full max-w-[400px] ml-0 shadow-lg mx-auto m-l" />
                 </div>
-                <!-- About2 Image (Mobile View Adjustment) -->
-                <div class="absolute top-[210px] left-[100px] z-0 w-[300px] h-[200px] md:w-[350px] md:h-[230px] shadow-lg md:top-[290px] md:left-[190px]">
-                    <img src="images/about2.jpeg" alt="Doctor 2" class="rounded-lg object-cover w-full h-full" />
+                <!-- About2 Image -->
+                <div class="relative mt-6 z-0">
+                    <img src="images/about2.jpeg" alt="Doctor 2" class="rounded-lg object-cover w-full mr-0 max-w-[350px] shadow-lg mx-auto" />
                 </div>
-                <!-- Group Image -->
-                <div class="absolute top-[290px] left-[0px] z-0 w-[100px] h-[100px] md:w-[172px] md:h-[172px]">
+                 <div class="absolute top-[290px] left-[0px] z-0 w-[100px] h-[100px] md:w-[172px] md:h-[172px]">
                     <img src="images/Group.png" alt="" class="rounded-lg object-cover w-full h-full" />
                 </div>
             </div>
     
             <!-- Right Column: Text Content -->
-            <div class="w-full md:w-1/2 space-y-6 mt-[60px]">
+            <div class="w-full md:w-1/2 space-y-6">
                 <h2 class="text-3xl font-bold text-[rgba(28,57,106,1)]">
-                    About Nirmal <span class="" style="color: rgba(167, 62, 79, 1);"> Hospital</span> 
+                    About Nirmal <span class="text-[rgba(167,62,79,1)]">Hospital</span>
                 </h2>
                 <p class="text-gray-600 leading-relaxed">
                     NIRMAL HOSPITALS has state-of-the-art infrastructure and is equipped to offer 
                     healthcare services in specialties and super specialties backed by specialized facilities, 
-                    value-added services, and round-the-clock services. The hospital is a one-place treatment 
-                    center with all diagnostic facilities, excellence, and a patient-friendly ambiance.
+                    value-added services, and round-the-clock services.
                 </p>
                 <p class="text-gray-600 leading-relaxed">
                     With medical expertise supported by the latest equipment, we offer healthcare treatment of 
-                    quality standards with utmost transparency, compassion, and care. Care with compassion and 
-                    service excellence are the guiding principles of the team.
+                    quality standards with utmost transparency, compassion, and care.
                 </p>
-                <!-- Call-to-Action Button -->
-                <a
-                    href="#"
-                    class="relative inline-flex items-center px-6 py-3 w-[167px] h-[50px] text-white rounded-lg hover:bg-red-700 transition" style="background-color: rgba(167, 62, 79, 1);">
+                <a href="#"
+                    class="inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-red-700 transition bg-[rgba(167,62,79,1)]">
                     Read More
-                    <img src="images/doubleaerrow.png" alt="" class="absolute right-[18px] top-[20px] w-[12px]">
+                    <img src="images/doubleaerrow.png" alt="Arrow" class="ml-2 w-4">
                 </a>
             </div>
         </div>
     </section>
-
+    
     <section class="special w-full bg-[rgba(235,240,246,1)] mt-12 md:mt-16">
         <div class="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
             <!-- Header -->
@@ -240,16 +235,42 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container text-center mt-[100px]">
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4" style="color: rgb(28, 57, 106, 1);">Gallery</h1>
+            <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget sem ut sapien ultricies porta. Cras <br> mollis bibendum faucibus</p>
+            
+            <!-- Four vertical parts -->
+            <div class="grid grid-cols-4 gap-x-2">
+                <!-- Image 1 -->
+                <div class="overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Image 1" class="w-full h-auto">
+                </div>
+                <!-- Image 2 (Split into two parts) -->
+                <div class="grid grid-rows-2 gap-y-2">
+                    <!-- Upper part of Image 2 -->
+                    <div class="overflow-hidden">
+                        <img src="images/mall.jpg" alt="Image 2 Part 1" class="w-full h-auto">
+                    </div>
+                    <!-- Lower part of Image 2 -->
+                    <div class="overflow-hidden">
+                        <img src="images/doctorcarcal.jpg" alt="Image 2 Part 2" class="w-full h-auto">
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Image 3" class="w-full h-auto">
+                </div>
+                <!-- Image 4 -->
+                <div class="overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Image 4" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
     
     
     
-      
-    
-    
-    
-    
-    
-
     
     
     
