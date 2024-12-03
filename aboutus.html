@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirmal Hospital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Mobile menu sliding effect */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-200%);
+        }
+
+        #mobile-menu.active {
+            transform: translateY(0);
+        }
+
+        /* .custom-button a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            border: 1px solid #000000;
+            padding: 8px 10px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .custom-button a::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            right: -1px;
+            height: 0;
+            width: 0;
+            width: 50px;
+            height: 120%;
+            border-right: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+            box-sizing: border-box;
+        } */
+    </style>
+</head>
+
+<body class="">
+
+    <!-- Header Section -->
+    <header class="w-full h-[70px] bg-white shadow-md relative flex items-center z-50">
+        <div class="container mx-auto max-w-[1440px] flex justify-between items-center px-6">
+            <!-- Shape (hidden on mobile) -->
+            <!-- <div id="shape-image" class="absolute top-[-35px] left-0 z-10 hidden md:block">
+
+                <img src="./Images/hero-shape-1.svg fill.png" alt="shape">
+            </div> -->
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="./Images/hospitallogo.png " alt="Logo" class="w-[160px] h-[54px]">
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-toggle" class="md:hidden text-black">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Navbar Links (Desktop) -->
+            <nav class="hidden md:flex w-auto space-x-8 text-sm text-black">
+                <a href="#" class="hover:text-blue-600">Home</a>
+                <a href="#about" class="hover:text-blue-600">About Us</a>
+                <a href="#solutions" class="hover:text-blue-600">Services</a>
+                <a href="#buy-sell" class="hover:text-blue-600">Specialty</a>
+                <a href="#blogs" class="hover:text-blue-600">Blogs</a>
+                <a href="#blogs" class="hover:text-blue-600">Team</a>
+                <a href="#blogs" class="hover:text-blue-600">Contact Us</a>
+            </nav>
+
+            <a href="#" class="inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-red-700 "
+                style="background-color:rgba(167, 62, 79, 1); ;">Book
+                Appointment
+                <img src="images/doubleaerrow.png" alt="Arrow" class="ml-5 w-4 h-3 ">
+            </a>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Initially Hidden) -->
+    <div id="mobile-menu" class="md:hidden bg-white w-full shadow-md absolute left-0 z-40">
+        <nav class="flex flex-col items-center space-y-6 py-6">
+            <a href="#" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Home</a>
+            <a href="#about" class="text-black hover:text-blue-600 px-4 py-3 text-lg">About Us</a>
+            <a href="#solutions" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Solutions</a>
+            <a href="#buy-sell" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Buy-sell</a>
+            <a href="#blogs" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Blogs</a>
+            <div class="custom-button">
+                <a href="#">Contact Us <span>&rarr;</span></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Banner Section -->
+    <section class="relative bg-[#D1E5FE]">
+        <!-- Banner Content -->
+        <div
+            class="relative z-10 w-full max-w-[1440px] mx-auto px-6 pt-6 flex flex-col md:flex-row items-center justify-between">
+            <!-- Left Side: About Us Title -->
+            <div
+                class="w-full md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:text-left relative">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 text-gray-800"
+                    style="color: rgb(28, 57, 106); font-family: 'Playfair Display';">
+                    About Us
+                </h1>
+                <img src="images/Vector (1).png" class="absolute left-[28%] top-[-33%]">
+            </div>
+            <img src="images/Frame.png" class="absolute left-[-33%] top-[79%]">
+
+            <!-- Right Side: Image -->
+            <div class="w-full md:w-1/2 flex justify-center items-center overflow-hidden">
+                <!-- Adjusted Image -->
+                <img src="images/doctor-bulk-billing-doctors-chapel-hill-health-care-medical-3 1.png" alt="About Us"
+                    class="max-w-full h-auto rounded-lg shadow-lg object-cover object-center"
+                    style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="relative bg-white py-12 relative">
+        <img src="images/_Compound Path_.png" class="absolute top-[20%] right-[0%]">
+
+        <div class="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-48 items-center">
+            <!-- Left Part: Images -->
+            <div class="flex flex-col gap-6 items-center order-1 md:order-none">
+                <div class="relative w-full">
+                    <img src="images/Rectangle 4327.png" alt="About Us"
+                        class="w-full h-auto rounded-lg object-cover object-center">
+                    <img src="images/Group 1000003677.png" class="absolute top-[0%] left-[83%]">
+                    <img src="images/Rectangle 4327.png" class="absolute top-[50%] left-[60%] h-[274px] w-[375px]">
+                </div>
+            </div>
+
+            <!-- Right Part: Content -->
+            <div class="text-center md:text-left order-2 md:order-none">
+                <!-- Title -->
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+                    We Can Give You The Grin You've <br>
+                    <span class="text-red-600">Generally Needed.</span>
+                </h2>
+
+                <!-- Description -->
+                <p class="text-gray-700 mb-6">
+                    <span class="text-blue-900">Nirmal Hospitals,</span> A Unit Of Nirmal Hospital Pvt. Ltd. (NHPL), A
+                    120 Bedded Multi Specialty & Tertiary Care Center, Situated At Ring Road, Surat, Gujarat. Nirmal
+                    Hospital
+                    Has State-Of-The Art Infrastructure And Is Equipped To Offer Healthcare Services In Specialties And
+                    Super
+                    Specialties Backed By Specialized Facilities Services.
+                </p>
+
+                <!-- Two Rows with Icons and Text -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-4">
+                        <img src="images/Frame 5.png" alt="Icon 1" class="w-7 h-7">
+                        <p>Always open</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <img src="images/Frame 5.png" alt="Icon 2" class="w-7 h-7">
+                        <p>Specialist Doctor</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <img src="images/Frame 5.png" alt="Icon 3" class="w-7 h-7">
+                        <p>Ambulance Facility</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <img src="images/Frame 5.png" alt="Icon 4" class="w-7 h-7">
+                        <p>Laboratory Test</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <img src="images/Frame 5.png" alt="Icon 5" class="w-7 h-7">
+                        <p>Reporting & Analysis</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <img src="images/Frame 5.png" alt="Icon 6" class="w-7 h-7">
+                        <p>Technical Medical Audit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Description (Outside Both Parts) -->
+        <div class="max-w-[1440px] mx-auto px-6 mt-12">
+            <p class="text-gray-700 text-center md:text-left">
+                <span class="text-blue-900">Nirmal Hospitals</span> Is Multi Specialty Health Hub For Adult & Pediatric
+                Patients Offering Orthopedics,
+                Laparoscopy Surgery, Neurology, Neurosurgery, Pediatric, Neonatology, Urology, Uro Surgery, Oncology,
+                Onco Surgery, Gynecology, Cardiology (Non-Invasive), Internal Medicine, Critical Care And Rehabilitation
+                Facilities. A Dedicated Emergency Department Takes Care Of Trauma Cases Comprehensively And Promptly.
+                All The Hospital Services Are Well Linked And Monitored With The Hospital Management Information System.
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="relative bg-white py-24 bg-cover bg-center"
+        style="background-image: url('images/Our\ Doctors.png');">
+
+        <div class="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-48 items-center">
+            <!-- Right Part: Content -->
+            <div class="text-center md:text-left order-2 md:order-none">
+                <!-- Title -->
+
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+                    Pediatric-Neonatal
+                    <span class="text-red-600">Critical Care</span>
+                </h2>
+
+                <!-- Description -->
+                <p class="text-gray-700 mb-6 ">
+                    <span class="text-blue-900 whitespace-nowrap">Addition To The Indoor And Outpatient Facilities
+                        In Pediatrics, Our Core
+                        Strength Lies In Intensive <br> Care Of NEONATAL & PEDIATRICS Patients. The Pediatric And
+                        Neonatal
+                        Critical Care Units Are <br> Equipped With State-Of-The-Art Technology And Team Of Qualified
+                        &
+                        Experienced Pediatric And <br> Neonatal Intensive.
+                </p>
+
+                <!-- Two Rows with Icons and Text -->
+
+                <div class="flex items-start gap-4">
+                    <img src="images/Group 1000005142.png" alt="Icon 6" class="w-7 h-7">
+                    <p>The Pediatric And Neonatal Critical Care Units Are Equally Equipped With State-Of-The –Art
+                        Equipment And Team Of Qualified.</p>
+                </div>
+                <div class="flex items-start gap-4 mt-6">
+                    <img src="images/Group 1000005142.png" alt="Icon 6" class="w-7 h-7">
+                    <p>Transparency And Service Excellence To Our Esteemed Patients.</p>
+                </div>
+
+            </div>
+
+            <!-- Left Part: Images -->
+            <div class="flex flex-col gap-6 items-center order-1 md:order-none">
+                <div class="relative w-full">
+                    <img src="images/Rectangle 19364.png" alt="About Us"
+                        class="w-full h-auto rounded-lg object-cover object-center relative z-10">
+                    <img src="images/Rectangle 19489.png" class="absolute top-8 -left-6 ">
+                </div>
+            </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="relative bg-white py-24 bg-cover bg-center relative">
+
+        <div class="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-48 items-center">
+            <!-- Right Part: Content -->
+            <div class="text-center md:text-left order-2 md:order-none">
+
+                <img src="images/pngwing 16.png" class="absolute top-[40%] left-[0%]">
+                <!-- Title -->
+
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+                    We Are The <span class="text-red-600">Pioneers !!!</span>
+                </h2>
+                <!-- Two Rows with Icons and Text -->
+
+                <div class="flex items-start gap-4">
+                    <img src="images/Group 1000005142.png" alt="Icon 6" class="w-7 h-7">
+                    <p>First NABH Accredited Multi Specialty Hospital</p>
+                </div>
+                <div class="flex items-start gap-4 mt-6">
+                    <img src="images/Group 1000005142.png" alt="Icon 6" class="w-7 h-7">
+                    <p>First GOLD Certified Hospital By National Health Authority (NHA)-<br>Quality Council Of India.
+                    </p>
+                </div>
+                <div class="flex items-start gap-4 mt-6">
+                    <img src="images/Group 1000005142.png" alt="Icon 6" class="w-7 h-7">
+                    <p>Member Of International Quality Network Forum</p>
+                </div>
+                <div class="flex items-start gap-4 mt-6">
+                    <img src="images/Group 1000005142.png" alt="Icon 6" class="w-7 h-7">
+                    <p>Volunteered For Region's First SAFE-I Certification</p>
+                </div>
+                <div class="flex items-start gap-4 mt-6">
+                    <img src="images/Group 1000005142.png" alt="Icon 6" class="w-7 h-7">
+                    <p>We Are The Pioneers !!!</p>
+                </div>
+                <!-- Two Rows with Icons and Text -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="flex items-start gap-4 items-center">
+                        <img src="images/24.png" alt="Icon 1" class="w-55 h-55">
+                        <p class="text-2xl">24 Hour Services</p>
+                    </div>
+                    <div class="flex items-start gap-4 items-center">
+                        <img src="images/Clock.png" alt="Icon 2" class="w-55 h-55">
+                        <p class="text-2xl">Flexible</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Left Part: Images -->
+            <div class="flex flex-col gap-8 items-center order-1 md:order-none">
+                <div class="relative w-full">
+                    <img src="images/Rectangle 19365.png" alt="About Us"
+                        class="w-full h-auto rounded-lg object-cover object-center">
+
+                    <img src="images/Rectangle 19366.png" class="absolute top-[20%] -left-[30%] h-[274px] w-[375px]">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex max-w-[1440px] mx-auto items-start gap-4 mt-16">
+            <img src="images/Group 1000005142.png" alt="Icon 6" class="w-7 h-7">
+            <p>Microscope, J&J Harmonic Generator, BBraun Nerve Stimulation, Karl Storz 3-Chip Laparoscopy System, C-Arm
+                & Valleylab Cautery To Conduct All Types Of Surgeries Including Joint Replacement Surgery, Onco Surgery,
+                Laparoscopic Surgery, Neurosurgery, Uro Surgery And High Risk Obstetric Surgeries</p>
+        </div>
+        <div class="flex max-w-[1440px] mx-auto items-start gap-4 mt-6">
+            <img src="images/Group 1000005142.png" alt="Icon 6" class="w-7 h-7">
+            <p>Dedicated Dialysis Department Equipped With Fresenius Dialysis Machines And Baxter CRRT Facility</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="relative bg-white py-24 bg-cover bg-center"
+        >
+
+        <div class="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
+            
+
+            <!-- Left Part: Images -->
+            <div class="flex flex-col gap-6 items-center order-1 md:order-none">
+                <div class="relative w-full">
+                    <img src="images/doctor.png" alt="About Us"
+                        class="w-[419px] h-[460px] rounded-lg object-cover object-center">
+
+                </div>
+            </div>
+
+
+            <!-- Right Part: Content -->
+            <div class="text-center md:text-left order-2 md:order-none relative">
+                <!-- Title -->
+
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6 whitespace-nowrap">
+                    Dr. Nirmal G. Choraria Chairman Of 
+                    <span class="text-red-600">Nirmal <br> Hospitals</span>
+                </h2>
+
+                <!-- Description -->
+                <p class="text-gray-700 mb-6 ">
+                    <span class="text-black-900 whitespace-nowrap">I Wish To Take This Opportunity Of Sharing With You My
+                        Vision Of Providing World-Class Health Services To The People Of <br> South Gujarat. I Embarked
+                        On
+                        This Journey In 1983 With The Establishment Of Nirmal Children’s Hospital With A Promise To <br>
+                        Deliver Quality Care Based On Sound Foundations Of Ethics And Affordability To The Neonates,
+                        Infants And Children Of <br> South Gujarat.
+                </p>
+                <p class="text-gray-700 mb-6 font-medium	">
+                    <span class="text-black whitespace-nowrap">Always In The Service Of Our Beloved Medical
+                        Fraternity & The Community!!
+                </p>
+                <p class="font-bold mb-6 ">
+                    <span class="text-blue-900 whitespace-nowrap">
+                        I Remain, <br>
+                        Yours Sincerely,
+                </p>
+                
+                <img src="images/pngwing 8.png" class="absolute -top-20 left-[85%]">
+               
+            </div>
+
+
+    </section>
+
+
+
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isMenuOpen = false;
+
+        const updateButtonIcon = () => {
+            if (isMenuOpen) {
+                mobileMenuToggle.innerHTML = `<svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>`;
+            } else {
+                mobileMenuToggle.innerHTML = `<svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>`;
+            }
+        };
+
+        mobileMenuToggle.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            mobileMenu.classList.toggle('active');
+            updateButtonIcon();
+        });
+    </script>
+</body>
+
+</html>
