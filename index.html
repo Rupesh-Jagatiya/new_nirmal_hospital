@@ -17,32 +17,6 @@
         #mobile-menu.active {
             transform: translateY(0);
         }
-
-        /* .custom-button a {
-            font-size: 12px;
-            text-decoration: none;
-            color: #000000;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 600;
-            border: 1px solid #000000;
-            padding: 8px 10px;
-            display: inline-block;
-            position: relative;
-        }
-
-        .custom-button a::before {
-            content: '';
-            position: absolute;
-            bottom: -1px;
-            right: -1px;
-            height: 0;
-            width: 0;
-            width: 50px;
-            height: 120%;
-            border-right: 1px solid #e5e5e5;
-            border-bottom: 1px solid #e5e5e5;
-            box-sizing: border-box;
-        } */
     </style>
 </head>
 
@@ -82,8 +56,13 @@
                 <a href="#blogs" class="hover:text-blue-600">Contact Us</a>
             </nav>
 
-            <a href="#" class="hidden md:block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 ">Book
-                Appointment</a>
+
+            <a href="#"
+                class="hidden md:inline-flex items-center px-6 py-3 text-white rounded-lg bg-[rgba(167,62,79,1)] hover:bg-red-700 transition">
+                Book Appointment
+                <img src="images/doubleaerrow.png" alt="Arrow" class="ml-2 w-4 h-4">
+            </a>
+
         </div>
     </header>
 
@@ -360,6 +339,7 @@
                 </div>
             </div>
 
+            <!-- //our service-start// -->
             <div class="container mx-auto py-12 px-4">
                 <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
                 <p class="text-center text-gray-600 mb-12">Lorem Ipsum is simply dummy text of the printing and
@@ -403,6 +383,8 @@
                     </a>
                 </div>
             </div>
+            <!-- //our service-end// -->
+
         </div>
     </section>
 
@@ -640,7 +622,8 @@
                 <span style="color: rgba(167, 62, 79, 1); font-family: Playfair Display;">Newsletter</span>
             </h1>
             <p class="tracking-widest mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit magna at dui commodo facilisis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit magna at dui commodo
+                facilisis.
             </p>
             <div class="flex items-center justify-center mt-8">
                 <div class="relative w-full md:w-1/2">
@@ -656,129 +639,138 @@
         </div>
     </section>
 
-    <footer class="bg-cover bg-center bg-no-repeat py-10 text-white mt-[100px]" style="background-image: url('images/ocen.png');">
+    <footer class="bg-cover bg-center bg-no-repeat py-10 text-white mt-[100px]"
+        style="background-image: url('images/ocen.png');">
         <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
-          <!-- Left Section -->
-          <div>
-            <img src="images/hospitallogo.png" alt="Logo" class="w-32">
-            <p class="mt-4 text-gray-800">
-              I wish to take this opportunity of sharing with you my vision of providing world-class health services to the people of south Gujarat.
-            </p>
-            <div class="mt-4 flex space-x-4">
-              <a href="#" class="hover:text-blue-300">
-                <i class="fab fa-facebook-f"  style="color: rgba(28, 57, 106, 1);"></i>
-              </a>
-              <a href="#" class="hover:text-pink-300">
-                <i class="fab fa-instagram" style="color: rgba(28, 57, 106, 1);"></i>
-              </a>
-              <a href="#" class="hover:text-blue-300">
-                <i class="fab fa-twitter" style="color: rgba(28, 57, 106, 1);"></i>
-              </a>
-              <a href="#" class="hover:text-blue-300">
-                <i class="fab fa-linkedin-in" style="color: rgba(28, 57, 106, 1);"></i>
-              </a>
+            <!-- Left Section -->
+            <div>
+                <img src="images/hospitallogo.png" alt="Logo" class="w-32">
+                <p class="mt-4 text-gray-800">
+                    I wish to take this opportunity of sharing with you my vision of providing world-class health
+                    services to the people of south Gujarat.
+                </p>
+                <div class="mt-4 flex space-x-4">
+                    <a href="#" class="hover:text-blue-300">
+                        <i class="fab fa-facebook-f" style="color: rgba(28, 57, 106, 1);"></i>
+                    </a>
+                    <a href="#" class="hover:text-pink-300">
+                        <i class="fab fa-instagram" style="color: rgba(28, 57, 106, 1);"></i>
+                    </a>
+                    <a href="#" class="hover:text-blue-300">
+                        <i class="fab fa-twitter" style="color: rgba(28, 57, 106, 1);"></i>
+                    </a>
+                    <a href="#" class="hover:text-blue-300">
+                        <i class="fab fa-linkedin-in" style="color: rgba(28, 57, 106, 1);"></i>
+                    </a>
+                </div>
             </div>
-          </div>
-      
-          <!-- Pages Section -->
-          <div>
-            <h2 class="text-lg font-semibold" style="color: rgba(167, 62, 79, 1);">Pages</h2>
-            <ul class="mt-4">
-              <li><a href="#" class="hover:text-blue-300 text-gray-800">Home</a></li>
-              <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">About Us</a></li>
-              <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Services</a></li>
-              <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Specialty</a></li>
-              <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Blog</a></li>
-              <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Team</a></li>
-              <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Contact Us</a></li>
-            </ul>
-          </div>
-      
-          <!-- Meet Us Here -->
-          <div class="md:col-span-[1.9] pl-px">
-            <h2 class="text-lg font-semibold" style="color: rgba(167, 62, 79, 1);">Meet Us Here</h2>
-            <ul class="mt-4">
-              <li>
-                <i class="fas fa-map-marker-alt" style="color: rgba(28, 57, 106, 1);"></i>
-                <strong style="color: rgba(28, 57, 106, 1);"> Ring Road, Surat:</strong> <br>
-                <span class="text-gray-800">Nirmal Hospital Pvt. Ltd. Ring Road, Surat, 395002, Gujarat, India</span>
-              </li>
-              <li class="mt-2">
-                <i class="fas fa-map-marker-alt" style="color: rgba(28, 57, 106, 1);"></i>
-                <strong style="color: rgba(28, 57, 106, 1);"> Vyara, Tapi:</strong> <br>
-                <span class="text-gray-800">Modi children hospital & Nirmal Critical Care Centre, Kakrapar bypass road, Shabridham society, Vyara, 394650</span>
-              </li>
-              <li class="mt-2">
-                <i class="fas fa-map-marker-alt" style="color: rgba(28, 57, 106, 1);"></i>
-                <strong style="color: rgba(28, 57, 106, 1);"> Parvat Patiya, Surat:</strong> <br>
-                <span class="text-gray-800">Miracle kids I.C.U, 3rd & 4th Floor, Shivani Motors Building, Next to Reshma Row House, Puna Kumbharia Road, Magob, Surat, 395010</span>
-              </li>
-            </ul>
-          </div>
-          
-      
-          <!-- Reach Us On -->
-          <div>
-            <h2 class="text-lg font-semibold" style="color: rgba(167, 62, 79, 1);">Reach Us On</h2>
-            <ul class="mt-4">
-              <li>
-                <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
-                <strong style="color: rgba(28, 57, 106, 1);"> Reception:</strong><br>
-                <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089999</a>
-              </li>
-              <li class="mt-2">
-                <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
-                <strong style="color: rgba(28, 57, 106, 1);"> Pediatric OPD:</strong><br>
-                <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089922</a>
-              </li>
-              <li class="mt-2">
-                <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
-                <strong style="color: rgba(28, 57, 106, 1);"> Laboratory:</strong><br>
-                <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089946</a>
-              </li>
-              <li class="mt-2">
-                <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
-                <strong style="color: rgba(28, 57, 106, 1);"> Ambulance:</strong><br>
-                <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089999</a>
-              </li>
-            </ul>
-          </div>
+
+            <!-- Pages Section -->
+            <div>
+                <h2 class="text-lg font-semibold" style="color: rgba(167, 62, 79, 1);">Pages</h2>
+                <ul class="mt-4">
+                    <li><a href="#" class="hover:text-blue-300 text-gray-800">Home</a></li>
+                    <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">About Us</a></li>
+                    <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Services</a></li>
+                    <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Specialty</a></li>
+                    <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Blog</a></li>
+                    <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Team</a></li>
+                    <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Meet Us Here -->
+            <div class="md:col-span-[1.9] pl-px">
+                <h2 class="text-lg font-semibold" style="color: rgba(167, 62, 79, 1);">Meet Us Here</h2>
+                <ul class="mt-4">
+                    <li>
+                        <i class="fas fa-map-marker-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Ring Road, Surat:</strong> <br>
+                        <span class="text-gray-800">Nirmal Hospital Pvt. Ltd. Ring Road, Surat, 395002, Gujarat,
+                            India</span>
+                    </li>
+                    <li class="mt-2">
+                        <i class="fas fa-map-marker-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Vyara, Tapi:</strong> <br>
+                        <span class="text-gray-800">Modi children hospital & Nirmal Critical Care Centre, Kakrapar
+                            bypass road, Shabridham society, Vyara, 394650</span>
+                    </li>
+                    <li class="mt-2">
+                        <i class="fas fa-map-marker-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Parvat Patiya, Surat:</strong> <br>
+                        <span class="text-gray-800">Miracle kids I.C.U, 3rd & 4th Floor, Shivani Motors Building, Next
+                            to Reshma Row House, Puna Kumbharia Road, Magob, Surat, 395010</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Reach Us On -->
+            <div>
+                <h2 class="text-lg font-semibold" style="color: rgba(167, 62, 79, 1);">Reach Us On</h2>
+                <ul class="mt-4">
+                    <li>
+                        <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Reception:</strong><br>
+                        <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089999</a>
+                    </li>
+                    <li class="mt-2">
+                        <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Pediatric OPD:</strong><br>
+                        <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089922</a>
+                    </li>
+                    <li class="mt-2">
+                        <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Laboratory:</strong><br>
+                        <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089946</a>
+                    </li>
+                    <li class="mt-2">
+                        <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Ambulance:</strong><br>
+                        <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089999</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      
+
         <!-- Footer Bottom -->
         <div class="mt-10 text-center text-sm text-gray-800">
-          Copyright © 2023 Nirmal Hospital | Design & Develop By Navkar Enterprise
+            Copyright © 2023 Nirmal Hospital | Design & Develop By Navkar Enterprise
         </div>
-      </footer>
+    </footer>
 
-      <div class="relative w-full bg-cover bg-center bg-no-repeat py-16" style="background-image: url('images/bet.png');">
+    <div class="relative w-full bg-cover bg-center bg-no-repeat py-16" style="background-image: url('images/bet.png');">
         <!-- Overlay -->
         <div class="absolute inset-0  opacity-50" style="background-color: rgba(28, 57, 106, 1);"></div>
-    
+
         <!-- Content -->
         <div class="relative container mx-auto max-w-[1200px]">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-white bg-opacity-80 rounded-lg shadow-md p-6">
                     <div class="flex items-center mb-4">
                         <div class="bg-blue-500 rounded-full p-3 mr-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </div>
                         <h2 class="text-xl font-bold text-gray-800">Our Mission</h2>
                     </div>
                     <p class="text-gray-600 text-base leading-relaxed">
-                        Establishing Evidence Based Medical Practices Through Excellence In Consultation And Technological Advancement.
+                        Establishing Evidence Based Medical Practices Through Excellence In Consultation And
+                        Technological Advancement.
                     </p>
                     <p class="text-gray-600 text-base leading-relaxed">
                         Empathy In Nursing, Teamwork And Providing Compassionate And Friendly Environment
                     </p>
                 </div>
-    
+
                 <div class="bg-white bg-opacity-80 rounded-lg shadow-md p-6">
                     <div class="flex items-center mb-4">
                         <div class="bg-blue-500 rounded-full p-3 mr-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
                             </svg>
                         </div>
@@ -794,18 +786,18 @@
             </div>
         </div>
     </div>
-    
-    
-      
-      <!-- FontAwesome Script -->
-      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-      
-      
-      
-    
-    
-    
-    
+
+
+
+    <!-- FontAwesome Script -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
     <!-- //Subscribe-end// -->
 
 
@@ -837,7 +829,7 @@
             updateButtonIcon();
         });
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Add any interactive JavaScript functionality here
         });
     </script>
