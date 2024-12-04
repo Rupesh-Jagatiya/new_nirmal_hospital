@@ -49,10 +49,10 @@
             <nav class="hidden md:flex w-auto space-x-8 text-sm text-black">
                 <a href="index.html" class="hover:text-blue-600">Home</a>
                 <a href="aboutus.html" class="hover:text-blue-600">About Us</a>
-                <a href="#solutions" class="hover:text-blue-600">Services</a>
-                <a href="#buy-sell" class="hover:text-blue-600">Specialty</a>
-                <a href="#blogs" class="hover:text-blue-600">Blogs</a>
-                <a href="#blogs" class="hover:text-blue-600">Team</a>
+                <a href="service.html" class="hover:text-blue-600">Services</a>
+                <a href="speciality.html" class="hover:text-blue-600">Specialty</a>
+                <a href="blog.html" class="hover:text-blue-600">Blogs</a>
+                <a href="team.html" class="hover:text-blue-600">Team</a>
                 <a href="#blogs" class="hover:text-blue-600">Contact Us</a>
             </nav>
 
@@ -69,11 +69,13 @@
     <!-- Mobile Menu (Initially Hidden) -->
     <div id="mobile-menu" class="md:hidden bg-white w-full shadow-md absolute left-0 z-40">
         <nav class="flex flex-col items-center space-y-6 py-6">
-            <a href="#" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Home</a>
-            <a href="#about" class="text-black hover:text-blue-600 px-4 py-3 text-lg">About Us</a>
-            <a href="#solutions" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Solutions</a>
-            <a href="#buy-sell" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Buy-sell</a>
-            <a href="#blogs" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Blogs</a>
+            <a href="index.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Home</a>
+            <a href="aboutus.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">About Us</a>
+            <a href="service.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Services</a>
+            <a href="speciality.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Specialty</a>
+            <a href="blog.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Blogs</a>
+            <a href="team.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Team</a>
+            <a href="#blogs" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Contact Us</a>
             <div class="custom-button">
                 <a href="#">Contact Us <span>&rarr;</span></a>
             </div>
@@ -318,7 +320,53 @@
     </section>
     
 
+    <div class="relative w-full bg-cover bg-center bg-no-repeat py-16" style="background-image: url('images/bet.png');">
+        <!-- Overlay -->
+        <div class="absolute inset-0  opacity-90" style="background-color: rgba(255, 255, 255, 1)"></div>
 
+        <!-- Content -->
+        <div class="relative container mx-auto max-w-[1200px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white bg-opacity-80 rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-500 rounded-full p-3 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-800">Our Mission</h2>
+                    </div>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        Establishing Evidence Based Medical Practices Through Excellence In Consultation And
+                        Technological Advancement.
+                    </p>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        Empathy In Nursing, Teamwork And Providing Compassionate And Friendly Environment
+                    </p>
+                </div>
+
+                <div class="bg-white bg-opacity-80 rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-500 rounded-full p-3 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-800">Our Vision</h2>
+                    </div>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        To Be The Leading Provider Of Innovative Healthcare Solutions That Enhance Patient Outcomes.
+                    </p>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        Committed To Continuous Improvement And Excellence In All Aspects Of Our Services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -368,6 +416,107 @@
             </div>
         </div>
     </section>
+
+    <footer class="bg-cover bg-center bg-no-repeat py-10 text-white mt-[100px]"
+    style="background-image: url('images/ocen.png');">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Left Section -->
+        <div>
+            <img src="images/hospitallogo.png" alt="Logo" class="w-32">
+            <p class="mt-4 text-gray-800">
+                I wish to take this opportunity of sharing with you my vision of providing world-class health
+                services to the people of south Gujarat.
+            </p>
+            <div class="mt-4 flex space-x-4">
+                <a href="#" class="hover:text-blue-300">
+                    <i class="fab fa-facebook-f" style="color: rgba(28, 57, 106, 1);"></i>
+                </a>
+                <a href="#" class="hover:text-pink-300">
+                    <i class="fab fa-instagram" style="color: rgba(28, 57, 106, 1);"></i>
+                </a>
+                <a href="#" class="hover:text-blue-300">
+                    <i class="fab fa-twitter" style="color: rgba(28, 57, 106, 1);"></i>
+                </a>
+                <a href="#" class="hover:text-blue-300">
+                    <i class="fab fa-linkedin-in" style="color: rgba(28, 57, 106, 1);"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Pages Section -->
+        <div>
+            <h2 class="text-lg font-semibold" style="color: rgba(167, 62, 79, 1);">Pages</h2>
+            <ul class="mt-4">
+                <li><a href="#" class="hover:text-blue-300 text-gray-800">Home</a></li>
+                <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">About Us</a></li>
+                <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Services</a></li>
+                <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Specialty</a></li>
+                <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Blog</a></li>
+                <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Team</a></li>
+                <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Meet Us Here -->
+        <div class="md:col-span-[1.9] pl-px">
+            <h2 class="text-lg font-semibold" style="color: rgba(167, 62, 79, 1);">Meet Us Here</h2>
+            <ul class="mt-4">
+                <li>
+                    <i class="fas fa-map-marker-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                    <strong style="color: rgba(28, 57, 106, 1);"> Ring Road, Surat:</strong> <br>
+                    <span class="text-gray-800">Nirmal Hospital Pvt. Ltd. Ring Road, Surat, 395002, Gujarat,
+                        India</span>
+                </li>
+                <li class="mt-2">
+                    <i class="fas fa-map-marker-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                    <strong style="color: rgba(28, 57, 106, 1);"> Vyara, Tapi:</strong> <br>
+                    <span class="text-gray-800">Modi children hospital & Nirmal Critical Care Centre, Kakrapar
+                        bypass road, Shabridham society, Vyara, 394650</span>
+                </li>
+                <li class="mt-2">
+                    <i class="fas fa-map-marker-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                    <strong style="color: rgba(28, 57, 106, 1);"> Parvat Patiya, Surat:</strong> <br>
+                    <span class="text-gray-800">Miracle kids I.C.U, 3rd & 4th Floor, Shivani Motors Building, Next
+                        to Reshma Row House, Puna Kumbharia Road, Magob, Surat, 395010</span>
+                </li>
+            </ul>
+        </div>
+        
+
+        <!-- Reach Us On -->
+        <div>
+            <h2 class="text-lg font-semibold" style="color: rgba(167, 62, 79, 1);">Reach Us On</h2>
+            <ul class="mt-4">
+                <li>
+                    <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                    <strong style="color: rgba(28, 57, 106, 1);"> Reception:</strong><br>
+                    <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089999</a>
+                </li>
+                <li class="mt-2">
+                    <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                    <strong style="color: rgba(28, 57, 106, 1);"> Pediatric OPD:</strong><br>
+                    <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089922</a>
+                </li>
+                <li class="mt-2">
+                    <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                    <strong style="color: rgba(28, 57, 106, 1);"> Laboratory:</strong><br>
+                    <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089946</a>
+                </li>
+                <li class="mt-2">
+                    <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                    <strong style="color: rgba(28, 57, 106, 1);"> Ambulance:</strong><br>
+                    <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089999</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="mt-10 text-center text-sm text-gray-800">
+        Copyright © 2023 Nirmal Hospital | Design & Develop By Navkar Enterprise
+    </div>
+</footer>
+
 
 
 
