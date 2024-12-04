@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirmal Hospital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Mobile menu sliding effect */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-200%);
+        }
+
+        #mobile-menu.active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="">
+
+    <!-- Header Section -->
+    <header class="w-full h-[100px] bg-white shadow-md relative flex items-center z-50">
+        <div class="container mx-auto max-w-[1200px] flex justify-between items-center px-6">
+            <!-- Shape (hidden on mobile) -->
+            <!-- <div id="shape-image" class="absolute top-[-35px] left-0 z-10 hidden md:block">
+
+                <img src="./Images/hero-shape-1.svg fill.png" alt="shape">
+            </div> -->
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="./Images/hospitallogo.png " alt="Logo" class="w-[160px] h-[54px]">
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-toggle" class="md:hidden text-black">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Navbar Links (Desktop) -->
+            <nav class="hidden md:flex w-auto space-x-8 text-sm text-black">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="aboutus.html" class="hover:text-blue-600">About Us</a>
+                <a href="service.html" class="hover:text-blue-600">Services</a>
+                <a href="speciality.html" class="hover:text-blue-600">Specialty</a>
+                <a href="blog.html" class="hover:text-blue-600">Blogs</a>
+                <a href="team.html" class="hover:text-blue-600">Team</a>
+                <a href="#blogs" class="hover:text-blue-600">Contact Us</a>
+            </nav>
+
+
+            <a href="#"
+                class="hidden md:inline-flex items-center px-6 py-3 text-white rounded-lg bg-[rgba(167,62,79,1)] hover:bg-red-700 transition">
+                Book Appointment
+                <img src="images/doubleaerrow.png" alt="Arrow" class="ml-2 w-4 h-4">
+            </a>
+
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Initially Hidden) -->
+    <div id="mobile-menu" class="md:hidden bg-white w-full shadow-md absolute left-0 z-40">
+        <nav class="flex flex-col items-center space-y-6 py-6">
+            <a href="index.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Home</a>
+            <a href="aboutus.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">About Us</a>
+            <a href="service.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Services</a>
+            <a href="speciality.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Specialty</a>
+            <a href="blog.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Blogs</a>
+            <a href="team.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Team</a>
+            <a href="#blogs" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Contact Us</a>
+            <div class="custom-button">
+                <a href="#">Contact Us <span>&rarr;</span></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Banner Section -->
+    <section class="relative bg-[#D1E5FE]">
+        <!-- Banner Content -->
+        <div
+            class="relative z-10 w-full max-w-[1440px] mx-auto px-6 pt-6 flex flex-col md:flex-row items-center justify-between">
+            <!-- Left Side: About Us Title -->
+            <div
+                class="w-full md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:text-left relative">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 text-gray-800"
+                    style="color: rgb(28, 57, 106); font-family: 'Playfair Display';">
+                    Service
+                </h1>
+                <img src="images/Vector (1).png" class="absolute left-[20%] top-[-33%]">
+            </div>
+            <img src="images/Frame.png" class="absolute left-[-33%] top-[79%]">
+
+            <!-- Right Side: Image -->
+            <div class="w-full md:w-1/2 flex justify-center items-center overflow-hidden">
+                <!-- Adjusted Image -->
+                <img src="images/doctor-bulk-billing-doctors-chapel-hill-health-care-medical-3 1.png" alt="About Us"
+                    class="max-w-full h-auto rounded-lg shadow-lg object-cover object-center"
+                    style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container mx-auto py-12 px-4">
+        <h1 class="text-center md:text-5xl font-bold text-gray-800">
+            <span class="text-blue-700" style="font-family: Playfair Display;">Our</span> <span
+                style="color: rgba(167, 62, 79, 1); font-family: Playfair Display;">Service</span>
+        </h1>
+        <p class="text-center text-gray-600 mb-12 mt-3">Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry.Lorem Ipsum <br> has been the industry's standard dummy text.</p>
+        <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="rounded-lg shadow-md p-6 text-white" style="background-color: rgba(28, 57, 106, 1);">
+                <div class="flex items-center mb-4">
+                    <img src="images/leb.png" alt="" class="w-15 h-15 border-2 rounded-xl p-2">
+                    <h3 class="ml-4 text-xl font-bold">Laboratory</h3>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                <a href="#" class="inline-block text-sm font-medium text-white hover:underline">Read More »</a>
+            </div>
+            <div class="rounded-lg shadow-md p-6 text-white">
+                <div class="flex items-center mb-4">
+                    <img src="images/medicin1.png" alt="" class="w-15 h-15 border-2 rounded-xl p-2">
+                    <h3 class="ml-4 text-xl font-bold" style="color: rgba(28, 57, 106, 1);">Pharmacy</h3>
+                </div>
+                <p class="text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been.</p>
+                <a href="#" class="inline-block text-sm font-medium hover:underline mt-[10px]"
+                    style="color: rgba(28, 57, 106, 1);">Read More »</a>
+            </div>
+            <div class="rounded-lg shadow-md p-6 text-white">
+                <div class="flex items-center mb-4">
+                    <img src="images/ambulence.png" alt="" class="w-15 h-15 border-2 rounded-xl p-2">
+                    <h3 class="ml-4 text-xl font-bold" style="color: rgba(28, 57, 106, 1);">Ambulance</h3>
+                </div>
+                <p class="text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <a href="#" class="inline-block text-sm font-medium text-white hover:underline mt-[10px]"
+                    style="color: rgba(28, 57, 106, 1);">Read More »</a>
+            </div>
+
+            <div class="rounded-lg shadow-md p-6 text-white">
+                <div class="flex items-center mb-4">
+                    <img src="images/micro.png" alt="" class="w-15 h-15 border-2 rounded-xl p-2">
+                    <h3 class="ml-4 text-xl font-bold" style="color: rgba(28, 57, 106, 1);">Radiology</h3>
+                </div>
+                <p class="text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been.</p>
+                <a href="#" class="inline-block text-sm font-medium hover:underline mt-[10px]"
+                    style="color: rgba(28, 57, 106, 1);">Read More »</a>
+            </div>
+            <div class="rounded-lg shadow-md p-6 text-white">
+                <div class="flex items-center mb-4">
+                    <img src="images/virus.png" alt="" class="w-15 h-15 border-2 rounded-xl p-2">
+                    <h3 class="ml-4 text-xl font-bold" style="color: rgba(28, 57, 106, 1);">Microbiology</h3>
+                </div>
+                <p class="text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been.</p>
+                <a href="#" class="inline-block text-sm font-medium hover:underline mt-[10px]"
+                    style="color: rgba(28, 57, 106, 1);">Read More »</a>
+            </div>
+            <div class="rounded-lg shadow-md p-6 text-white">
+                <div class="flex items-center mb-4">
+                    <img src="images/friend.png" alt="" class="w-15 h-15 border-2 rounded-xl p-2">
+                    <h3 class="ml-4 text-xl font-bold" style="color: rgba(28, 57, 106, 1);">IDP</h3>
+                </div>
+                <p class="text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <a href="#" class="inline-block text-sm font-medium text-white hover:underline mt-[10px]"
+                    style="color: rgba(28, 57, 106, 1);">Read More »</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="relative h-screen flex items-center justify-center bg-cover bg-center bg-[url('./images/about2.jpeg')]">
+
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 bg-blue-900 opacity-60"></div>
+    
+        <!-- Content -->
+        <div class="relative text-center text-white px-4 max-w-lg">
+          <button id="playButton" class="mb-6 bg-white text-blue-900 p-4 rounded-full shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-6.586-3.657A1 1 0 007 8.423v7.154a1 1 0 001.166.987l6.586-3.657a1 1 0 000-1.738z" />
+            </svg>
+          </button>
+          <p class="text-lg whitespace-nowrap">
+            Lorem Ipsum is simply dummy text of the we a pnting aand typesetting industry<br />
+             <span class="ms-12"> Lorem Ipsum hasa been the industry's we a also the unchanged.</span>
+          </p>
+        </div>
+      </div>
+
+      
+    <section class=" mt-[150px]">
+        <div class="container mx-auto max-w-[1200px]" style="background-color: rgba(134, 187, 241, 1);">
+            <div class="Touchcontent relative p-12 ">
+                <h1 class="text-4xl md:text-5xl font-bold text-sky-950" style="font-family: Playfair Display;">Get In
+                    Touch <span style="color: rgba(167, 62, 79, 1);">With Us</span></h1>
+                <p class=" mt-4 font-medium	text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                    eget sem ut sapien ultricies porta.
+                    Cras mollis <br> bibendum faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                    eget
+                    sem ut sapien ultricies porta. <br> Cras mollis bibendum faucibus.
+                </p>
+                <img src="images/a5.png" alt="" class="absolute w-[300px] h-[300px] right-[30px] bottom-[90px]">
+                <a href="#"
+                    class="inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-red-700 transition bg-[rgba(167,62,79,1)]  mt-4">
+                    Content Us
+                    <img src="images/doubleaerrow.png" alt="Arrow" class="ml-2 w-4">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-cover bg-center bg-no-repeat py-10 text-white mt-[100px]"
+        style="background-image: url('images/ocen.png');">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Left Section -->
+            <div>
+                <img src="images/hospitallogo.png" alt="Logo" class="w-32">
+                <p class="mt-4 text-gray-800">
+                    I wish to take this opportunity of sharing with you my vision of providing world-class health
+                    services to the people of south Gujarat.
+                </p>
+                <div class="mt-4 flex space-x-4">
+                    <a href="#" class="hover:text-blue-300">
+                        <i class="fab fa-facebook-f" style="color: rgba(28, 57, 106, 1);"></i>
+                    </a>
+                    <a href="#" class="hover:text-pink-300">
+                        <i class="fab fa-instagram" style="color: rgba(28, 57, 106, 1);"></i>
+                    </a>
+                    <a href="#" class="hover:text-blue-300">
+                        <i class="fab fa-twitter" style="color: rgba(28, 57, 106, 1);"></i>
+                    </a>
+                    <a href="#" class="hover:text-blue-300">
+                        <i class="fab fa-linkedin-in" style="color: rgba(28, 57, 106, 1);"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pages Section -->
+            <div>
+                <h2 class="text-lg font-semibold" style="color: rgba(167, 62, 79, 1);">Pages</h2>
+                <ul class="mt-4">
+                    <li><a href="#" class="hover:text-blue-300 text-gray-800">Home</a></li>
+                    <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">About Us</a></li>
+                    <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Services</a></li>
+                    <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Specialty</a></li>
+                    <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Blog</a></li>
+                    <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Team</a></li>
+                    <li class="mt-2"><a href="#" class="hover:text-blue-300 text-gray-800">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Meet Us Here -->
+            <div class="md:col-span-[1.9] pl-px">
+                <h2 class="text-lg font-semibold" style="color: rgba(167, 62, 79, 1);">Meet Us Here</h2>
+                <ul class="mt-4">
+                    <li>
+                        <i class="fas fa-map-marker-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Ring Road, Surat:</strong> <br>
+                        <span class="text-gray-800">Nirmal Hospital Pvt. Ltd. Ring Road, Surat, 395002, Gujarat,
+                            India</span>
+                    </li>
+                    <li class="mt-2">
+                        <i class="fas fa-map-marker-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Vyara, Tapi:</strong> <br>
+                        <span class="text-gray-800">Modi children hospital & Nirmal Critical Care Centre, Kakrapar
+                            bypass road, Shabridham society, Vyara, 394650</span>
+                    </li>
+                    <li class="mt-2">
+                        <i class="fas fa-map-marker-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Parvat Patiya, Surat:</strong> <br>
+                        <span class="text-gray-800">Miracle kids I.C.U, 3rd & 4th Floor, Shivani Motors Building, Next
+                            to Reshma Row House, Puna Kumbharia Road, Magob, Surat, 395010</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Reach Us On -->
+            <div>
+                <h2 class="text-lg font-semibold" style="color: rgba(167, 62, 79, 1);">Reach Us On</h2>
+                <ul class="mt-4">
+                    <li>
+                        <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Reception:</strong><br>
+                        <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089999</a>
+                    </li>
+                    <li class="mt-2">
+                        <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Pediatric OPD:</strong><br>
+                        <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089922</a>
+                    </li>
+                    <li class="mt-2">
+                        <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Laboratory:</strong><br>
+                        <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089946</a>
+                    </li>
+                    <li class="mt-2">
+                        <i class="fas fa-phone-alt" style="color: rgba(28, 57, 106, 1);"></i>
+                        <strong style="color: rgba(28, 57, 106, 1);"> Ambulance:</strong><br>
+                        <a href="tel:02614089999" class="hover:text-blue-300 text-gray-800">0261-4089999</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-10 text-center text-sm text-gray-800">
+            Copyright © 2023 Nirmal Hospital | Design & Develop By Navkar Enterprise
+        </div>
+    </footer>
+
+
+
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isMenuOpen = false;
+
+        const updateButtonIcon = () => {
+            if (isMenuOpen) {
+                mobileMenuToggle.innerHTML = `<svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>`;
+            } else {
+                mobileMenuToggle.innerHTML = `<svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>`;
+            }
+        };
+
+        mobileMenuToggle.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            mobileMenu.classList.toggle('active');
+            updateButtonIcon();
+        });
+    </script>
+</body>
+
+</html>

@@ -49,10 +49,10 @@
             <nav class="hidden md:flex w-auto space-x-8 text-sm text-black">
                 <a href="index.html" class="hover:text-blue-600">Home</a>
                 <a href="aboutus.html" class="hover:text-blue-600">About Us</a>
-                <a href="#solutions" class="hover:text-blue-600">Services</a>
-                <a href="#buy-sell" class="hover:text-blue-600">Specialty</a>
-                <a href="#blogs" class="hover:text-blue-600">Blogs</a>
-                <a href="#blogs" class="hover:text-blue-600">Team</a>
+                <a href="service.html" class="hover:text-blue-600">Services</a>
+                <a href="speciality.html" class="hover:text-blue-600">Specialty</a>
+                <a href="blog.html" class="hover:text-blue-600">Blogs</a>
+                <a href="team.html" class="hover:text-blue-600">Team</a>
                 <a href="#blogs" class="hover:text-blue-600">Contact Us</a>
             </nav>
 
@@ -69,11 +69,12 @@
     <!-- Mobile Menu (Initially Hidden) -->
     <div id="mobile-menu" class="md:hidden bg-white w-full shadow-md absolute left-0 z-40">
         <nav class="flex flex-col items-center space-y-6 py-6">
-            <a href="#" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Home</a>
-            <a href="#about" class="text-black hover:text-blue-600 px-4 py-3 text-lg">About Us</a>
-            <a href="#solutions" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Solutions</a>
-            <a href="#buy-sell" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Buy-sell</a>
-            <a href="#blogs" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Blogs</a>
+            <a href="index.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Home</a>
+            <a href="aboutus.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">About Us</a>
+            <a href="service.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Solutions</a>
+            <a href="speciality.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Buy-sell</a>
+            <a href="blog.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Blogs</a>
+            <a href="team.html" class="text-black hover:text-blue-600 px-4 py-3 text-lg">Blogs</a>
             <div class="custom-button">
                 <a href="#">Contact Us <span>&rarr;</span></a>
             </div>
@@ -204,25 +205,35 @@
 
             <!-- Specialization Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="relative overflow-hidden bg-white shadow-md rounded-lg p-6 text-center">
                     <img src="images/pathlogy.png" alt="Pathology" class="w-16 h-16 mx-auto mb-4">
                     <h3 class="text-lg font-semibold">Pathology</h3>
+                    <img src="images/net.png" alt="" class="absolute top-[-50px] left-[-79px]">
+                    <img src="images/net.png" alt="" class="absolute bottom-[-120px] right-[-100px]">
                 </div>
-                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="relative overflow-hidden bg-white shadow-md rounded-lg p-6 text-center">
                     <img src="images/ortho.png" alt="Orthopedics" class="w-16 h-16 mx-auto mb-4">
                     <h3 class="text-lg font-semibold">Orthopedics</h3>
+                    <img src="images/net.png" alt="" class="absolute top-[-50px] left-[-79px]">
+                    <img src="images/net.png" alt="" class="absolute bottom-[-120px] right-[-100px]">
                 </div>
-                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="relative overflow-hidden bg-white shadow-md rounded-lg p-6 text-center">
                     <img src="images/nutrition.png" alt="Nutrition" class="w-16 h-16 mx-auto mb-4">
                     <h3 class="text-lg font-semibold">Nutrition</h3>
+                    <img src="images/net.png" alt="" class="absolute top-[-50px] left-[-79px]">
+                    <img src="images/net.png" alt="" class="absolute bottom-[-120px] right-[-100px]">
                 </div>
-                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="relative overflow-hidden bg-white shadow-md rounded-lg p-6 text-center">
                     <img src="images/medicine.png" alt="General Medicine" class="w-16 h-16 mx-auto mb-4">
                     <h3 class="text-lg font-semibold">General Medicine</h3>
+                    <img src="images/net.png" alt="" class="absolute top-[-50px] left-[-79px]">
+                    <img src="images/net.png" alt="" class="absolute bottom-[-120px] right-[-100px]">
                 </div>
-                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="relative overflow-hidden bg-white shadow-md rounded-lg p-6 text-center">
                     <img src="images/science.png" alt="Neuro Science Unit" class="w-16 h-16 mx-auto mb-4">
                     <h3 class="text-lg font-semibold">Neuro Science Unit</h3>
+                    <img src="images/net.png" alt="" class="absolute top-[-50px] left-[-79px]">
+                    <img src="images/net.png" alt="" class="absolute bottom-[-120px] right-[-100px]">
                 </div>
             </div>
         </div>
@@ -246,19 +257,19 @@
         <!-- Left and Right Background Images with Overlay -->
         <div class="absolute inset-0">
             <!-- Left Image (hidden on mobile) -->
-            <div class="absolute left-0 top-0 w-1/3 h-[30%] bg-cover bg-no-repeat hidden sm:block opacity-50"
+            <div class="absolute left-0 top-0 w-1/3 h-[100%] bg-cover bg-no-repeat hidden sm:block opacity-50"
                 style="background-image: url('images/cubes.png');">
                 <!-- Overlay for lightening the image -->
                 <div class="absolute inset-0 bg-white opacity-50"></div>
             </div>
             <!-- Right Image (hidden on mobile) -->
-            <div class="absolute right-0 top-0 w-1/3  h-[30%]  bg-cover opacity-50 bg-no-repeat transform scale-x-[-1] hidden sm:block"
+            <div class="absolute right-0 top-0 w-1/3 h-[100%] bg-cover opacity-50 bg-no-repeat transform scale-x-[-1] hidden sm:block"
                 style="background-image: url('images/cubes.png');">
                 <!-- Overlay for lightening the image -->
                 <div class="absolute inset-0 bg-white opacity-50"></div>
             </div>
         </div>
-
+    
         <div class="relative container mx-auto max-w-[1200px]">
             <!-- Header Section -->
             <div class="flex justify-between items-center mb-8 px-4 md:px-0">
@@ -280,7 +291,7 @@
                     </a>
                 </div>
             </div>
-
+    
             <!-- Doctors Cards -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 px-4 mt-[75px]">
                 <!-- Doctor Card 1 -->
@@ -293,7 +304,7 @@
                         <p class="text-red-500 text-sm">M.D. FMAS</p>
                     </div>
                 </div>
-
+    
                 <!-- Doctor Card 2 -->
                 <div class="bg-white shadow-md rounded-xl p-6 text-center relative">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -304,7 +315,7 @@
                         <p class="text-red-500 text-sm">MD</p>
                     </div>
                 </div>
-
+    
                 <!-- Doctor Card 3 -->
                 <div class="bg-white shadow-md rounded-xl p-6 text-center relative">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -315,7 +326,7 @@
                         <p class="text-red-500 text-sm">MS, FMAS</p>
                     </div>
                 </div>
-
+    
                 <!-- Doctor Card 4 -->
                 <div class="bg-white shadow-md rounded-xl p-6 text-center relative">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -326,7 +337,7 @@
                         <p class="text-red-500 text-sm">MS</p>
                     </div>
                 </div>
-
+    
                 <!-- Doctor Card 5 -->
                 <div class="bg-white shadow-md rounded-xl p-6 text-center relative">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -338,55 +349,56 @@
                     </div>
                 </div>
             </div>
-
-            <!-- //our service-start// -->
-            <div class="container mx-auto py-12 px-4">
-                <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
-                <p class="text-center text-gray-600 mb-12">Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.br Lorem Ipsum has been the industry's standard dummy text</p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class=" rounded-lg shadow-md p-6 text-white" style="background-color: rgba(28, 57, 106, 1);">
-                        <div class="flex items-center mb-4">
-                            <img src="images/leb.png" alt="" class="w-15 h-15 border-2 rounded-xl p-2">
-                            <h3 class="ml-4 text-xl font-bold">Laboratory</h3>
-                        </div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been.</p>
-                        <a href="#" class="inline-block text-sm font-medium text-white hover:underline">Read More »</a>
-                    </div>
-                    <div class=" rounded-lg shadow-md p-6 text-white">
-                        <div class="flex items-center mb-4">
-                            <img src="images/medicin1.png" alt="" class="w-15 h-15 border-2 rounded-xl p-2">
-                            <h3 class="ml-4 text-xl font-bold" style="color: rgba(28, 57, 106, 1);">Pharmacy</h3>
-                        </div>
-                        <p class="text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been.</p>
-                        <a href="#" class="inline-block text-sm font-medium hover:underline mt-[10px]"
-                            style="color: rgba(28, 57, 106, 1);">Read More »</a>
-                    </div>
-                    <div class=" rounded-lg shadow-md p-6 text-white">
-                        <div class="flex items-center mb-4">
-                            <img src="images/ambulence.png" alt="" class="w-15 h-15 border-2 rounded-xl p-2">
-                            <h3 class="ml-4 text-xl font-bold" style="color: rgba(28, 57, 106, 1);">Ambulance</h3>
-                        </div>
-                        <p class="text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </p>
-                        <a href="#" class="inline-block text-sm font-medium text-white hover:underline mt-[10px]"
-                            style="color: rgba(28, 57, 106, 1);">Read More »</a>
-                    </div>
-                </div>
-                <div class="flex justify-center mt-8">
-                    <a href="#"
-                        class="inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-red-700 transition bg-[rgba(167,62,79,1)]">
-                        View More
-                        <img src="images/doubleaerrow.png" alt="Arrow" class="ml-2 w-4">
-                    </a>
-                </div>
-            </div>
-            <!-- //our service-end// -->
-
         </div>
     </section>
+    
+    <!-- New Section for Our Services -->
+    <section class="container mx-auto py-12 px-4">
+        <h1 class="text-center md:text-5xl font-bold text-gray-800">
+            <span class="text-blue-700" style="font-family: Playfair Display;">Our</span> <span
+                style="color: rgba(167, 62, 79, 1); font-family: Playfair Display;">Service</span>
+        </h1>
+        <p class="text-center text-gray-600 mb-12 mt-3">Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry.Lorem Ipsum <br> has been the industry's standard dummy text.</p>
+        <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="rounded-lg shadow-md p-6 text-white" style="background-color: rgba(28, 57, 106, 1);">
+                <div class="flex items-center mb-4">
+                    <img src="images/leb.png" alt="" class="w-15 h-15 border-2 rounded-xl p-2">
+                    <h3 class="ml-4 text-xl font-bold">Laboratory</h3>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                <a href="#" class="inline-block text-sm font-medium text-white hover:underline">Read More »</a>
+            </div>
+            <div class="rounded-lg shadow-md p-6 text-white">
+                <div class="flex items-center mb-4">
+                    <img src="images/medicin1.png" alt="" class="w-15 h-15 border-2 rounded-xl p-2">
+                    <h3 class="ml-4 text-xl font-bold" style="color: rgba(28, 57, 106, 1);">Pharmacy</h3>
+                </div>
+                <p class="text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been.</p>
+                <a href="#" class="inline-block text-sm font-medium hover:underline mt-[10px]"
+                    style="color: rgba(28, 57, 106, 1);">Read More »</a>
+            </div>
+            <div class="rounded-lg shadow-md p-6 text-white">
+                <div class="flex items-center mb-4">
+                    <img src="images/ambulence.png" alt="" class="w-15 h-15 border-2 rounded-xl p-2">
+                    <h3 class="ml-4 text-xl font-bold" style="color: rgba(28, 57, 106, 1);">Ambulance</h3>
+                </div>
+                <p class="text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <a href="#" class="inline-block text-sm font-medium text-white hover:underline mt-[10px]"
+                    style="color: rgba(28, 57, 106, 1);">Read More »</a>
+            </div>
+        </div>
+        <div class="flex justify-center mt-8">
+            <a href="#"
+                class="inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-red-700 transition bg-[rgba(167,62,79,1)]">
+                View More
+                <img src="images/doubleaerrow.png" alt="Arrow" class="ml-2 w-4">
+            </a>
+        </div>
+    </section>
+    
 
     <section class="relative bg-blue-50 py-[100px] ">
         <div class="absolute opacity-20">
@@ -739,53 +751,7 @@
         </div>
     </footer>
 
-    <div class="relative w-full bg-cover bg-center bg-no-repeat py-16" style="background-image: url('images/bet.png');">
-        <!-- Overlay -->
-        <div class="absolute inset-0  opacity-50" style="background-color: rgba(28, 57, 106, 1);"></div>
-
-        <!-- Content -->
-        <div class="relative container mx-auto max-w-[1200px]">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white bg-opacity-80 rounded-lg shadow-md p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-blue-500 rounded-full p-3 mr-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <h2 class="text-xl font-bold text-gray-800">Our Mission</h2>
-                    </div>
-                    <p class="text-gray-600 text-base leading-relaxed">
-                        Establishing Evidence Based Medical Practices Through Excellence In Consultation And
-                        Technological Advancement.
-                    </p>
-                    <p class="text-gray-600 text-base leading-relaxed">
-                        Empathy In Nursing, Teamwork And Providing Compassionate And Friendly Environment
-                    </p>
-                </div>
-
-                <div class="bg-white bg-opacity-80 rounded-lg shadow-md p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-blue-500 rounded-full p-3 mr-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-                            </svg>
-                        </div>
-                        <h2 class="text-xl font-bold text-gray-800">Our Vision</h2>
-                    </div>
-                    <p class="text-gray-600 text-base leading-relaxed">
-                        To Be The Leading Provider Of Innovative Healthcare Solutions That Enhance Patient Outcomes.
-                    </p>
-                    <p class="text-gray-600 text-base leading-relaxed">
-                        Committed To Continuous Improvement And Excellence In All Aspects Of Our Services.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+   
 
 
 
