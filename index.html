@@ -83,13 +83,13 @@
     </div>
 
     <!-- Banner Section -->
-    <section class="relative z-10">
+    <section class="relative z-10 ">
         <!-- Full-width Responsive Background Image -->
         <div class="w-full h-[calc(100vh-70px)] bg-cover bg-center flex items-center justify-center"
             style="background-image: url('images/banner_image.jpeg');">
 
             <!-- Overlay for better text readability -->
-            <!-- <div class="absolute inset-0" style="background-color: rgba(181, 207, 226, 1);"></div> -->
+            <!-- <div class="absolute inset-0 z-10" style="background-color: rgba(181, 207, 226, 1);"></div> -->
 
 
             <!-- Banner Content -->
@@ -104,36 +104,36 @@
                             Can Trust</h1>
                         <p class="text-sm font-semibold text-black" style="margin-bottom: 20px;">Lorem ipsum dolor, sit
                             amet consectetur adipisicing elit.<br> Ducimus, est. Eos veritatis.</p>
-                        <a href="#" class="inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-red-700 "
-                            style="background-color:rgba(167, 62, 79, 1); ;">Book
-                            Appointment
-                            <img src="images/doubleaerrow.png" alt="Arrow" class="ml-5 w-4 h-3 ">
-                        </a>
+                           <a href="#"
+                class="hidden md:inline-flex items-center px-6 py-3 text-white rounded-lg bg-[rgba(167,62,79,1)] hover:bg-red-700 transition">
+                Book Appointment
+                <img src="images/doubleaerrow.png" alt="Arrow" class="ml-2 w-4 h-4">
+            </a>
                     </div>
 
                     <!-- <div class="w-full md:w-1/2 flex justify-center">
                         <img src="./Images/20945965-ai 1.png" alt="Hero Image" class="max-w-[280px] md:max-w-full h-auto rounded-lg">
                     </div> -->
                 </div>
-                <div class="absolute top-[125px] left-[-10px] space-y-4">
+                <div class="absolute top-[125px] left-[-10px] space-y-4 hidden md:block">
                     <a href="#"
-                        class="block w-5 h-5 bg-white text-[rgba(28,57,106,1)] h-[20px] w-[20px] text-[10px] rounded-full flex items-center justify-center hover:bg-blue-700">
-                        <i class="fa-brands fa-facebook-f"></i>
+                      class="block w-5 h-5 bg-white text-[rgba(28,57,106,1)] h-[20px] w-[20px] text-[10px] rounded-full flex items-center justify-center hover:bg-blue-700">
+                      <i class="fa-brands fa-facebook-f"></i>
                     </a>
                     <a href="#"
-                        class="block w-5 h-5 bg-white text-[rgba(28,57,106,1)] text-[10px] rounded-full flex items-center justify-center hover:bg-pink-700 hover:text-white">
-                        <i class="fa-brands fa-instagram"></i>
+                      class="block w-5 h-5 bg-white text-[rgba(28,57,106,1)] text-[10px] rounded-full flex items-center justify-center hover:bg-pink-700 hover:text-white">
+                      <i class="fa-brands fa-instagram"></i>
                     </a>
                     <a href="#"
-                        class="block w-5 h-5 bg-white text-[rgba(28,57,106,1)] text-[10px] rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white">
-                        <i class="fa-brands fa-linkedin-in"></i>
+                      class="block w-5 h-5 bg-white text-[rgba(28,57,106,1)] text-[10px] rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white">
+                      <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                     <a href="#"
-                        class="block w-5 h-5 bg-white text-[rgba(28,57,106,1)] text-[10px] rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white">
-                        <i class="fa-brands fa-twitter"></i>
+                      class="block w-5 h-5 bg-white text-[rgba(28,57,106,1)] text-[10px] rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white">
+                      <i class="fa-brands fa-twitter"></i>
                     </a>
-
-                </div>
+                  </div>
+                  
             </div>
         </div>
     </section>
@@ -198,10 +198,12 @@
                         Neurology, Neurosurgery, and Laparoscopy Surgery.
                     </p>
                 </div>
-                <a href="#" class="inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-red-700 "
-                    style="background-color:rgba(167, 62, 79, 1); ;">View More
-                    <img src="images/doubleaerrow.png" alt="Arrow" class="ml-5">
-                </a>
+               
+                <a href="#"
+                class="hidden md:inline-flex items-center px-6 py-3 text-white rounded-lg bg-[rgba(167,62,79,1)] hover:bg-red-700 transition">
+                View More
+                <img src="images/doubleaerrow.png" alt="Arrow" class="ml-2 w-4 h-4">
+            </a>
             </div>
 
             <!-- Specialization Grid -->
@@ -270,7 +272,7 @@
                 <div class="absolute inset-0 bg-white opacity-50"></div>
             </div>
         </div>
-    
+
         <div class="relative container mx-auto max-w-[1200px]">
             <!-- Header Section -->
             <div class="flex justify-between items-center mb-8 px-4 md:px-0">
@@ -292,7 +294,7 @@
                     </a>
                 </div>
             </div>
-    
+
             <!-- Doctors Cards -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 px-4 mt-[75px]">
                 <!-- Doctor Card 1 -->
@@ -305,7 +307,7 @@
                         <p class="text-red-500 text-sm">M.D. FMAS</p>
                     </div>
                 </div>
-    
+
                 <!-- Doctor Card 2 -->
                 <div class="bg-white shadow-md rounded-xl p-6 text-center relative">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -316,7 +318,7 @@
                         <p class="text-red-500 text-sm">MD</p>
                     </div>
                 </div>
-    
+
                 <!-- Doctor Card 3 -->
                 <div class="bg-white shadow-md rounded-xl p-6 text-center relative">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -327,7 +329,7 @@
                         <p class="text-red-500 text-sm">MS, FMAS</p>
                     </div>
                 </div>
-    
+
                 <!-- Doctor Card 4 -->
                 <div class="bg-white shadow-md rounded-xl p-6 text-center relative">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -338,7 +340,7 @@
                         <p class="text-red-500 text-sm">MS</p>
                     </div>
                 </div>
-    
+
                 <!-- Doctor Card 5 -->
                 <div class="bg-white shadow-md rounded-xl p-6 text-center relative">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -352,12 +354,12 @@
             </div>
         </div>
     </section>
-    
+
     <!-- New Section for Our Services -->
     <section class="container mx-auto py-12 px-4">
         <h1 class="text-center md:text-5xl font-bold text-gray-800">
-            <span class="text-blue-700" style="font-family: Playfair Display;">Our</span> <span
-                style="color: rgba(167, 62, 79, 1); font-family: Playfair Display;">Service</span>
+            <span class="text-blue-700"  style="color:rgba(28, 57, 106, 1) ;">Our</span> <span
+                style="color: rgba(167, 62, 79, 1); ">Service</span>
         </h1>
         <p class="text-center text-gray-600 mb-12 mt-3">Lorem Ipsum is simply dummy text of the printing and
             typesetting industry.Lorem Ipsum <br> has been the industry's standard dummy text.</p>
@@ -399,7 +401,7 @@
             </a>
         </div>
     </section>
-    
+
 
     <section class="relative bg-blue-50 py-[100px] ">
         <div class="absolute opacity-20">
@@ -410,11 +412,11 @@
         </div>
         <div class="container mx-auto px-4 max-w-[1200px]">
             <!-- Section Header -->
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800">
+            <div class="text-center mb-12" style="font-family: Playfair Display;">
+                <h2 class="text-3xl font-bold text-gray-800" style="color:rgba(28, 57, 106, 1); font-size: 44px;">
                     See What Our Clients <span style="color: rgba(167, 62, 79, 1);">Reviews</span>
                 </h2>
-                <p class="text-gray-600 mt-2">
+                <p class="text-gray-600 mt-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget sem ut sapien ultricies porta.
                     Cras mollis <br> bibendum faucibus.
                 </p>
@@ -532,7 +534,7 @@
             <!-- Title Section -->
             <div class="text-center mb-8">
                 <h2 class="text-3xl  text-gray-800"
-                    style="font-family: Playfair Display; font-weight: 700; font-size: 44px;">
+                    style="font-family: Playfair Display; font-weight: 700; font-size: 44px;" style="color:rgba(28, 57, 106, 1) ;">
                     Our News <span class="text-red-500">& Blog</span>
                 </h2>
                 <p class="text-black mt-2 mt-6">
@@ -752,7 +754,7 @@
         </div>
     </footer>
 
-   
+
 
 
 
