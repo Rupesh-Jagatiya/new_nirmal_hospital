@@ -10,13 +10,15 @@ module.exports = {
   plugins: [],
 };
 
-// module.exports = {
-//   theme: {
-//     extend: {
-//       colors: {
-//         customOverlay: 'rgba(181, 207, 226, 1)',
-//       },
-//     },
-//   },
-// }
+module.exports = {
+  theme: {
+    screens: {
+      sm: '640px',
+      md: '768px', // Medium Tablets
+      lg: '1024px', // Laptops
+      xl: '1440px', // Desktops
+    },
+  },
+};
+
 
