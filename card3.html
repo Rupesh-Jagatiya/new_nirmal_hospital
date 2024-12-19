@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirmal Hospital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Mobile menu sliding effect */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-200%);
+        }
+
+        #mobile-menu.active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="">
+
+    <!-- Header Section -->
+    <header class="w-full h-[100px] bg-white shadow-md relative flex items-center z-50">
+        <div class="container mx-auto max-w-[1440px] flex justify-between items-center px-6">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="Images/hospitallogo.png" alt="Logo" class="w-[120px] sm:w-[140px] md:w-[160px]">
+            </div>
+    
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-toggle" class="md:hidden text-black">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+    
+            <!-- Navbar Links -->
+            <nav class="hidden md:flex lg:space-x-8 space-x-4 text-sm font-jost font-medium text-[18px] text-[rgba(127,127,127,1)]">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="aboutus.html" class="hover:text-blue-600">About Us</a>
+                <a href="service.html" class="hover:text-blue-600">Services</a>
+                <a href="speciality.html" class="hover:text-blue-600">Specialty</a>
+                <a href="blog.html" class="hover:text-blue-600">Blogs</a>
+                <a href="team.html" class="hover:text-blue-600">Team</a>
+                <a href="contectus.html" class="hover:text-blue-600">Contact Us</a>
+            </nav>
+            
+            <!-- Appointment Button -->
+            <a href="#"
+                class="hidden md:inline-flex items-center px-4 py-2 text-white rounded-lg bg-red-600 hover:bg-red-700 transition">
+                Book Appointment
+                <img src="images/doubleaerrow.png" alt="Arrow" class="ml-2 w-4 h-4">
+            </a>
+        </div>
+    </header>
+    
+
+    <!-- Mobile Menu (Initially Hidden) -->
+    <div id="mobile-menu" class="md:hidden bg-white w-full shadow-md absolute left-0 z-40">
+        <nav class="flex flex-col items-center space-y-6 py-6 font-jost font-medium text-[18px] text-[rgba(127,127,127,1)]">
+            <a href="index.html" class="hover:text-blue-600 px-4 py-3 text-lg">Home</a>
+            <a href="aboutus.html" class="hover:text-blue-600 px-4 py-3 text-lg">About Us</a>
+            <a href="service.html" class="hover:text-blue-600 px-4 py-3 text-lg">Solutions</a>
+            <a href="speciality.html" class="hover:text-blue-600 px-4 py-3 text-lg">Specialty</a>
+            <a href="blog.html" class="hover:text-blue-600 px-4 py-3 text-lg">Blogs</a>
+            <a href="team.html" class="hover:text-blue-600 px-4 py-3 text-lg">Team</a>
+            <a href="contectus.html" class="hover:text-blue-600 px-4 py-3 text-lg">Contact Us</a>
+        </nav>
+    </div>
+
+    <!-- Banner Content -->
+    <section class="relative bg-[#D1E5FE]">
+        <div
+            class="relative z-10 w-full max-w-[1440px] mx-auto px-6 pt-6 flex  md:flex-row items-center justify-between">
+            <!-- Left Side: About Us Title -->
+            <div
+                class="w-full md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:text-left relative">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 text-gray-800"
+                    style="color: rgb(28, 57, 106); font-family: 'Playfair Display';">
+                    Blog
+                </h1>
+                <img src="images/Vector (1).png" class="absolute left-[14%] top-[-33%]">
+            </div>
+            <img src="images/Frame.png" class="absolute left-[0%] top-[79%] hidden md:hidden sm:block">
+
+
+            <!-- Right Side: Image -->
+            <div class="w-full md:w-1/2 flex justify-center items-center overflow-hidden">
+                <!-- Adjusted Image -->
+                <img src="images/doctor-bulk-billing-doctors-chapel-hill-health-care-medical-3 1.png" alt="About Us"
+                    class="max-w-full h-auto rounded-lg shadow-lg object-cover object-center"
+                    style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto max-w-[1440px] p-6 flex flex-col lg:flex-row gap-8">
+            <!-- Image Section -->
+            <div class="lg:w-3/4">
+                <img src="images/a6.jpg" alt="Blog Image"
+                    class="w-full h-[830px] object-cover rounded-lg shadow-lg">
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:w-1/4 ">
+                <!-- Search Box -->
+                <div class=" shadow-lg rounded-lg p-4 mb-6" style="background-color: rgba(246, 250, 252, 1);">
+                    <h2 class="text-lg font-semibold text-gray-700 mb-3">Search</h2>
+                    <div class="relative">
+                        <input type="text" placeholder="Search"
+                            class="w-full border rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <button class="absolute right-2 top-2 text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-6-6m3-7a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <h2 class="text-lg font-semibold text-gray-700 mb-3 " style="background-color: rgba(28, 57, 106, 1); color: white;"><span class="ml-4">Categories</span></h2>
+                <div class="shadow-lg rounded-lg p-4" style="background-color: rgba(246, 250, 252, 1);">
+                    <ul class="space-y-2">
+                        <li class="pb-2">
+                            <a href="#"
+                                class="flex items-center justify-between text-gray-600 hover:text-blue-600 transition">
+                                Orthopedics
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="#"
+                                class="flex items-center justify-between text-gray-600 hover:text-blue-600 transition">
+                                Dental
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="#"
+                                class="flex items-center justify-between text-gray-600 hover:text-blue-600 transition">
+                                Neurosciences
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="#"
+                                class="flex items-center justify-between text-gray-600 hover:text-blue-600 transition">
+                                Cancer Care
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="#"
+                                class="flex items-center justify-between text-gray-600 hover:text-blue-600 transition">
+                                Gastroenterology
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="#"
+                                class="flex items-center justify-between text-gray-600 hover:text-blue-600 transition">
+                                Medicine
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="#"
+                                class="flex items-center justify-between text-gray-600 hover:text-blue-600 transition">
+                                Cardiology
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="#"
+                                class="flex items-center justify-between text-gray-600 hover:text-blue-600 transition">
+                                Surgery
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="#"
+                                class="flex items-center justify-between text-gray-600 hover:text-blue-600 transition">
+                                Physiotherapy
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pb-2">
+                            <a href="#"
+                                class="flex items-center justify-between text-gray-600 hover:text-blue-600 transition">
+                                Dermatology
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="container mx-auto p-6">
+            <div class="bg-white  rounded-lg p-6">
+                <h1 class="text-gray-800 mb-4" style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 44px;">
+                    Health Care That Convenient And Affordable
+                </h1>
+                
+                <!-- Metadata -->
+                <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                    <div class="flex items-center gap-2">
+                        <span class="inline-flex items-center gap-1" style="font-family: 'Jost', sans-serif; font-weight: 500; font-size: 20px;">
+                            <i class="fas fa-calendar-alt" style="color: rgba(28, 57, 106, 1); "></i>
+                            Jun 15, 2023
+                        </span>
+                        <span class="ml-[100px]" style="font-family: 'Jost', sans-serif; font-weight: 500; font-size: 20px;"> <span style="color: rgba(28, 57, 106, 1); font-family: 'Jost', sans-serif; font-weight: 500; font-size: 20px;">Upload by:</span> Admin</span>
+                    </div>
+                </div>
+
+                <!-- Title -->
+                
+
+                <!-- Content Text -->
+                <p class="text-gray-600 leading-relaxed mb-6" style="font-family: 'Jost', sans-serif; font-weight: 400; font-size: 18px;">High blood pressure, also known as hypertension, affects
+                    millions worldwide. It is a condition that increases the risk of various health problems such as
+                    strokes, heart attacks, and more. While there are several well-known causes of hypertension, such as
+                    a poor diet, smoking and lack of exercise, there are other factors that can contribute to high blood
+                    pressure. In this post, let's explore some surprising causes of hypertension that you may not know.
+                    smoking and lack of exercise, there are other factors that can contribute to high blood pressure. In
+                    this post, let's explore some surprising causes of hypertension that you may not know. High blood
+                    pressure, also known as hypertension, affects millions worldwide.</p>
+
+                <!-- Key Points -->
+                <ul class="text-gray-600 leading-relaxed mb-6 space-y-3">
+                    <li style="font-family: 'Jost', sans-serif; font-weight: 400; font-size: 18px;"><strong style="color: rgba(28, 57, 106, 1); ">Poor Sleep:</strong>One of the surprising causes of hypertension is poor sleep. Research
+                        shows people who don't get enough quality sleep are at risk of developing hypertension. This is
+                        because sleep helps regulate the body's stress hormones, which affect blood pressure. If you're
+                        not getting enough restful sleep each night, it could be contributing to your high blood
+                        pressure.</li>
+                    <li style="font-family: 'Jost', sans-serif; font-weight: 400; font-size: 18px;"><strong style="color: rgba(28, 57, 106, 1); ">Oral Health Problems:</strong> Poor oral health can contribute to hypertension. Studies
+                        show people with gum disease and other oral health conditions are more likely to have high blood
+                        pressure; this could be due to inflammation caused by oral bacteria, which can affect blood
+                        vessels and increase blood pressure</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-cover bg-center bg-no-repeat py-10 text-white mt-[100px]"
+        style="background-image: url('images/ocen.png');">
+        <div class="container mx-auto max-w-[1440px] px-6">
+            <!-- Responsive Grid -->
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+                <!-- Left Section: Logo and Description -->
+                <div class="col-span-1">
+                    <img src="images/hospitallogo.png" alt="Logo" class="w-32 mb-4">
+                    <p class="text-gray-800 leading-relaxed">
+                        I wish to take this opportunity of sharing with you my vision of providing world-class health
+                        services to the people of south Gujarat.
+                    </p>
+                    <!-- Social Icons -->
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook-f text-blue-700"></i></a>
+                        <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram text-blue-700"></i></a>
+                        <a href="#" class="hover:text-blue-500"><i class="fab fa-twitter text-blue-700"></i></a>
+                        <a href="#" class="hover:text-blue-500"><i class="fab fa-linkedin-in text-blue-700"></i></a>
+                    </div>
+                </div>
+
+                <!-- Pages Section -->
+                <div class="col-span-1">
+                    <h2 class="text-lg font-semibold mb-4" style="color: rgba(167, 62, 79, 1);">Pages</h2>
+                    <ul class="text-gray-800 space-y-2">
+                        <li><a href="#" class="hover:text-blue-500">Home</a></li>
+                        <li><a href="#" class="hover:text-blue-500">About Us</a></li>
+                        <li><a href="#" class="hover:text-blue-500">Services</a></li>
+                        <li><a href="#" class="hover:text-blue-500">Specialty</a></li>
+                        <li><a href="#" class="hover:text-blue-500">Blog</a></li>
+                        <li><a href="#" class="hover:text-blue-500">Team</a></li>
+                        <li><a href="#" class="hover:text-blue-500">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Reach Us On -->
+                <div class="col-span-1">
+                    <h2 class="text-lg font-semibold mb-4" style="color: rgba(167, 62, 79, 1);">Reach Us On</h2>
+                    <ul class="text-gray-800 space-y-4">
+                        <li>
+                            <i class="fas fa-phone-alt text-blue-700"></i>
+                            <strong> Reception:</strong> <br>0261-4089999
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt text-blue-700"></i>
+                            <strong> Pediatric OPD:</strong> <br>0261-4089922
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt text-blue-700"></i>
+                            <strong> Laboratory:</strong> <br>0261-4089946
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt text-blue-700"></i>
+                            <strong> Ambulance:</strong> <br>0261-4089999
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Meet Us Here -->
+                <div class="col-span-1">
+                    <h2 class="text-lg font-semibold mb-4" style="color: rgba(167, 62, 79, 1);">Meet Us Here</h2>
+                    <ul class="text-gray-800 space-y-4">
+                        <li>
+                            <i class="fas fa-map-marker-alt text-blue-700"></i>
+                            <strong> Ring Road, Surat:</strong>
+                            <br>Nirmal Hospital Pvt. Ltd., Ring Road, Surat, 395002
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt text-blue-700"></i>
+                            <strong> Vyara, Tapi:</strong>
+                            <br>Modi children hospital & Nirmal Critical Care Centre, Vyara, 394650
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt text-blue-700"></i>
+                            <strong> Parvat Patiya, Surat:</strong>
+                            <br>Miracle Kids I.C.U, Shivani Motors Building, Surat, 395010
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-10 text-center text-sm text-gray-800">
+            Copyright © 2023 Nirmal Hospital | Design & Develop By Navkar Enterprise
+        </div>
+    </footer>
+
+
+    <!-- FontAwesome Script -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isMenuOpen = false;
+
+        const updateButtonIcon = () => {
+            if (isMenuOpen) {
+                mobileMenuToggle.innerHTML = `<svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>`;
+            } else {
+                mobileMenuToggle.innerHTML = `<svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>`;
+            }
+        };
+
+        mobileMenuToggle.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            mobileMenu.classList.toggle('active');
+            updateButtonIcon();
+        });
+
+        $(document).ready(function () {
+            // Add any interactive JavaScript functionality here
+        });
+    </script>
+</body>
+
+</html>
